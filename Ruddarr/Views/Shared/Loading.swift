@@ -12,6 +12,7 @@ struct QueueStatusIcon: View {
     var color: Color = .secondary
 
     @EnvironmentObject var settings: AppSettings
+    @State private var animate = false
 
     var body: some View {
         let icon = status.image
@@ -20,7 +21,13 @@ struct QueueStatusIcon: View {
             .accessibilityLabel(status.label)
 
         if status.pulses {
-            icon.symbolEffect(.pulse.byLayer, options: .repeat(.continuous))
+            icon
+                .symbolEffect(.pulse.byLayer, value: animate)
+                .task {
+                    withAnimation(.linear(duration: 1).repeatForever(autoreverses: false)) {
+                        animate.toggle()
+                    }
+                }
         } else {
             icon
         }
