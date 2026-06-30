@@ -50,8 +50,10 @@ jobs:
           echo "✅ 找到源码主权限文件: $SOURCE_ENTITLEMENTS"
           cp "$SOURCE_ENTITLEMENTS" main.entitlements
           
-          # 2. 清洗 iCloud/CloudKit 权限（推送 aps-environment 保留以支持通知）
+          # 2. 清洗会导致巨魔闪退的云端权限
           echo "正在清洗 entitlements 中的越界权限..."
+          /usr/libexec/PlistBuddy -c "Delete :aps-environment" main.entitlements || true
+          /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.aps-environment" main.entitlements || true
           /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.icloud-container-identifiers" main.entitlements || true
           /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.icloud-services" main.entitlements || true
           /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.ubiquity-kvstore-identifier" main.entitlements || true
@@ -65,6 +67,8 @@ jobs:
               
               if [ -n "$EXT_ENTITLEMENTS" ]; then
                 cp "$EXT_ENTITLEMENTS" ext.entitlements
+                /usr/libexec/PlistBuddy -c "Delete :aps-environment" ext.entitlements || true
+                /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.aps-environment" ext.entitlements || true
                 codesign --force --sign - --entitlements ext.entitlements "$appex"
               else
                 codesign --force --sign - "$appex"
