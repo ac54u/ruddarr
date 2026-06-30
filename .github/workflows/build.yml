@@ -86,7 +86,7 @@ jobs:
           mkdir -p Payload
           cp -R "$APP_PATH" Payload/
           zip -r Ruddarr.ipa Payload
-          rm -f Payload build main.entitlements ext.entitlements
+          rm -rf Payload build main.entitlements ext.entitlements
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
