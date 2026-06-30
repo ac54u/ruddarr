@@ -3,6 +3,10 @@ import SwiftUI
 
 let dependencies: Dependencies = .live
 
+/// Global dependency injection container.
+/// Provides the API layer, CloudKit integration, router, toast notifications,
+/// and user defaults. Swap ``api`` or ``cloudkit`` at runtime for previews
+/// or testing via ``live`` and ``mock``.
 struct Dependencies: Sendable {
     static var live: Self {
         .init(api: .live)

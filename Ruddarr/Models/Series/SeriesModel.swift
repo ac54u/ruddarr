@@ -186,7 +186,7 @@ class SeriesModel {
         }
     }
 
-    @concurrent nonisolated private static func filterAndSortItems(
+    nonisolated private static func filterAndSortItems(
         _ items: [Series],
         _ alternateTitles: [Series.ID: String],
         _ sort: SeriesSort,

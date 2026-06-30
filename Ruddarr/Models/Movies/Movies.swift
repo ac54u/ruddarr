@@ -168,7 +168,7 @@ class Movies {
         }
     }
 
-    @concurrent nonisolated private static func filterAndSortItems(
+    nonisolated private static func filterAndSortItems(
         _ items: [Movie],
         _ alternateTitles: [Movie.ID: String],
         _ sort: MovieSort,

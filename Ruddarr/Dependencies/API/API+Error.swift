@@ -7,6 +7,12 @@ extension LocalizedError {
 }
 
 extension API {
+    /// Unified error type for all API failures.
+    ///
+    /// Covers network errors (``notConnectedToInternet``, ``timeoutOnPrivateIp``),
+    /// server errors (``badStatusCode``, ``errorResponse``), decoding failures
+    /// (``decodingError``), and wrapped underlying errors. Conforms to `LocalizedError`
+    /// for user-visible messages.
     enum Error: Swift.Error {
         case void
 

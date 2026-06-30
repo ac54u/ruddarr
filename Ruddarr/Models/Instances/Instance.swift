@@ -1,7 +1,11 @@
 import SwiftUI
 import Foundation
 
-// Changing instance properties is risky and can wipe saved cloud data
+/// Persistent configuration for a connected Radarr or Sonarr instance.
+/// Stored in UserDefaults via ``AppSettings`` and synced via iCloud.
+///
+/// - Warning: Adding, removing, or renaming stored properties can break existing
+///   cloud data. Validate backward compatibility before modifying the ``CodingKeys``.
 struct Instance: Identifiable, Equatable, Codable {
     var id = UUID()
 
@@ -180,11 +184,11 @@ struct InstanceStats: Equatable, Codable {
         self.size = series.reduce(0) { $0 + ($1.statistics?.sizeOnDisk ?? 0) }
     }
 
-    @concurrent static func make(movies: [Movie]) async -> Self {
+    static func make(movies: [Movie]) async -> Self {
         Self(movies: movies)
     }
 
-    @concurrent static func make(series: [Series]) async -> Self {
+    static func make(series: [Series]) async -> Self {
         Self(series: series)
     }
 }

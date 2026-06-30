@@ -6,6 +6,10 @@ import CryptoKit
 import Sentry
 import UserNotifications
 
+/// Manages push notification registration, device token submission to the
+/// ``Notifications/url`` backend, and webhook synchronization for each
+/// configured *arr instance. Uses CloudKit to derive a stable account
+/// identifier and HMAC-SHA256 for request signatures.
 actor Notifications {
     static let url: String = "https://notify.ruddarr.com"
 

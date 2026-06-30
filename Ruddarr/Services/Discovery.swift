@@ -1,6 +1,9 @@
 import SwiftUI
 import Sentry
 
+/// Fetches trending and popular movies/series from the Ruddarr discovery API.
+/// Results are cached with a daily refresh window per media type.
+/// Used on the "Add Movie" and "Add Series" screens to surface suggestions.
 @MainActor
 @Observable
 class Discovery {

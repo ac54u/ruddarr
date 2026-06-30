@@ -293,18 +293,25 @@ struct MoviesView: View {
         dependencies.quickActions.clearTimer()
         maybeSwitchToInstance()
 
-        let startTime = Date()
-
         Task { @MainActor in
-            while Date().timeIntervalSince(startTime) < 10 {
-                if let movie = instance.movies.items.first(where: { $0.id == id }) {
-                    dependencies.router.moviesPath = .init([MoviesPath.movie(movie.id)])
-                    return
-                }
-
-                try? await Task.sleep(for: .seconds(0.1))
+            if await waitForMovie(id, timeout: 10) {
+                dependencies.router.moviesPath = .init([MoviesPath.movie(id)])
             }
         }
+    }
+
+    private func waitForMovie(_ id: Movie.ID, timeout: TimeInterval) async -> Bool {
+        let deadline = Date().addingTimeInterval(timeout)
+
+        while Date() < deadline {
+            if instance.movies.items.contains(where: { $0.id == id }) {
+                return true
+            }
+
+            try? await Task.sleep(for: .seconds(0.25))
+        }
+
+        return false
     }
 }
 

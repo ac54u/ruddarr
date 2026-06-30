@@ -302,27 +302,33 @@ struct SeriesView: View {
         dependencies.quickActions.clearTimer()
         maybeSwitchToInstance()
 
-        let startTime = Date()
-
         Task { @MainActor in
-            while Date().timeIntervalSince(startTime) < 10 {
-                if let series = instance.series.items.first(where: { $0.id == seriesId }) {
-                    dependencies.router.seriesPath = .init([
-                        SeriesPath.series(series.id)
-                    ])
+            if await waitForSeries(seriesId, timeout: 10) {
+                dependencies.router.seriesPath = .init([
+                    SeriesPath.series(seriesId)
+                ])
 
-                    if let seasonId {
-                        dependencies.router.seriesPath.append(
-                            SeriesPath.season(seriesId, seasonId, episodeId)
-                        )
-                    }
-
-                    return
+                if let seasonId {
+                    dependencies.router.seriesPath.append(
+                        SeriesPath.season(seriesId, seasonId, episodeId)
+                    )
                 }
-
-                try? await Task.sleep(for: .seconds(0.1))
             }
         }
+    }
+
+    private func waitForSeries(_ id: Series.ID, timeout: TimeInterval) async -> Bool {
+        let deadline = Date().addingTimeInterval(timeout)
+
+        while Date() < deadline {
+            if instance.series.items.contains(where: { $0.id == id }) {
+                return true
+            }
+
+            try? await Task.sleep(for: .seconds(0.25))
+        }
+
+        return false
     }
 }
 

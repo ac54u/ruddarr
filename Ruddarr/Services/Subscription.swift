@@ -2,6 +2,9 @@ import SwiftUI
 import StoreKit
 import Sentry
 
+/// Manages Ruddarr+ subscription entitlements via StoreKit.
+/// Controls access to push notifications and alternate app icons.
+/// When running unsigned (TrollStore), entitlements are always granted.
 class Subscription {
     static let group: String = "21452440"
     static let name: String = "Ruddarr+"
