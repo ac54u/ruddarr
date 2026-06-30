@@ -6,7 +6,8 @@ class Images {
     static let cacheName: String = "com.ruddarr.images"
 
     static let shared: ImagePipeline = {
-        var config = ImagePipeline.Configuration.withDataCache(name: cacheName)
+        var config = ImagePipeline.Configuration()
+        config.dataCache = try? DataCache(name: cacheName)
         config.dataCachePolicy = .automatic
         config.imageCache = ImageCache.shared
 
