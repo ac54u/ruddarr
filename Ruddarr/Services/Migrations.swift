@@ -1,4 +1,5 @@
 import Foundation
+import Sentry
 
 class Migrations {
     static let key = "schemaVersion"
