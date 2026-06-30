@@ -20,6 +20,10 @@ struct Ruddarr: App {
         // Tips.showAllTipsForTesting()
         #endif
 
+        if Bundle.main.url(forResource: "embedded", withExtension: "mobileprovision") == nil {
+            dependencies.cloudkit = .mock
+        }
+
         Migrations.run()
 
         try? Tips.configure()
