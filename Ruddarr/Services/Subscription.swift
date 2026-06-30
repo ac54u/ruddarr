@@ -7,39 +7,15 @@ class Subscription {
     static let name: String = "Ruddarr+"
 
     static func entitledToService() async -> Bool {
-        do {
-            let subscriptions = try await Product.SubscriptionInfo.status(for: group)
-            return containsEntitledState(subscriptions)
-        } catch {
-            leaveBreadcrumb(.error, category: "subscription", message: "entitledToService check failed", data: ["error": error])
-        }
-
-        return false
+        true
     }
 
     static func entitlementStatus() async -> SubscriptionStatus? {
-        do {
-            let subscriptions = try await Product.SubscriptionInfo.status(for: group)
-            return status(from: subscriptions)
-        } catch {
-            leaveBreadcrumb(.error, category: "subscription", message: "entitledToService check failed", data: ["error": error])
-        }
-
-        return nil
+        .subscribed
     }
 
     static func containsEntitledState(_ statuses: [StoreKit.Product.SubscriptionInfo.Status]) -> Bool {
-        var entitledStates: [Product.SubscriptionInfo.RenewalState] = [
-            .subscribed,
-            .inGracePeriod,
-        ]
-
-        // testflight subscriptions expire fast, accept `.expired` state
-        if isRunningIn(.testflight) {
-            entitledStates.append(.expired)
-        }
-
-        return statuses.contains { entitledStates.contains($0.state) }
+        true
     }
 
     static func lastEntitledDate() async -> Date? {
