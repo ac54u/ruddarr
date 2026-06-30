@@ -15,18 +15,21 @@ jobs:
 
       - name: Archive for iOS Device
         run: |
+          # 关键修改：使用 CODE_SIGN_IDENTITY="-" 让 Xcode 原生生成 Ad-Hoc 签名
+          # 这样 Xcode 会自动处理所有 Entitlements 变量，且不会报错
           xcodebuild archive \
             -scheme Ruddarr \
             -archivePath $(pwd)/build/Ruddarr.xcarchive \
             -skipPackagePluginValidation \
             -sdk iphoneos \
-            CODE_SIGNING_ALLOWED=NO \
-            CODE_SIGN_IDENTITY="" \
-            CODE_SIGNING_REQUIRED=NO
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=YES
 
       - name: Inject Alternate Icons into Info.plist
         run: |
-          PLIST_PATH="$(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app/Info.plist"
+          APP_PATH="$(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app"
+          PLIST_PATH="$APP_PATH/Info.plist"
           
           /usr/libexec/PlistBuddy -c "Add :CFBundleIcons:CFBundleAlternateIcons dict" "$PLIST_PATH" || true
           
@@ -40,40 +43,38 @@ jobs:
           
           echo "✅ 真实备用图标注册信息已成功注入 Info.plist"
 
-      - name: Install ldid
-        run: brew install ldid
-
-      - name: Create IPA & Inject Entitlements
+      - name: Re-Sign with macOS Native codesign
         run: |
+          # 修改 Info.plist 会导致刚才的签名失效，我们使用苹果官方工具重签
           APP_PATH="$(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app"
           
-          # 1. 主程序注入 (排除扩展的 entitlements 文件)
-          MAIN_ENTITLEMENTS=$(find . -name "*.entitlements" | grep -v "NotificationService" | head -n 1)
+          # 1. 提取 Xcode 刚刚完美生成的官方权限文件
+          codesign -d --entitlements :- "$APP_PATH" > main.entitlements
           
-          if [ -n "$MAIN_ENTITLEMENTS" ]; then
-            echo "✅ 找到主程序权限文件: $MAIN_ENTITLEMENTS"
-            ldid -S"$MAIN_ENTITLEMENTS" "$APP_PATH/Ruddarr"
-          else
-            echo "⚠️ 未找到主程序权限文件，使用默认签名..."
-            ldid -S "$APP_PATH/Ruddarr"
-          fi
-          
-          # 2. 遍历并为所有应用扩展 (App Extensions) 注入基础伪签名
+          # 2. 为所有的应用扩展 (NotificationService) 重签
           if [ -d "$APP_PATH/PlugIns" ]; then
-            echo "✅ 发现 PlugIns 目录，开始为扩展程序伪签名..."
             find "$APP_PATH/PlugIns" -name "*.appex" | while read appex; do
-              # 提取扩展的二进制文件名称 (例如 NotificationService)
-              binary_name=$(basename "$appex" .appex)
-              echo "  - 正在签名扩展: $binary_name"
-              ldid -S "$appex/$binary_name"
+              echo "  - 正在用 Apple 官方工具重签扩展: $(basename "$appex")"
+              codesign -d --entitlements :- "$appex" > ext.entitlements || true
+              if [ -s ext.entitlements ]; then
+                codesign --force --sign - --entitlements ext.entitlements "$appex"
+              else
+                codesign --force --sign - "$appex"
+              fi
             done
           fi
           
-          # 3. 打包 IPA
+          # 3. 为主程序重签
+          echo "✅ 正在用 Apple 官方 codesign 工具重签主程序..."
+          codesign --force --sign - --entitlements main.entitlements "$APP_PATH"
+
+      - name: Create IPA
+        run: |
+          APP_PATH="$(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app"
           mkdir -p Payload
           cp -R "$APP_PATH" Payload/
           zip -r Ruddarr.ipa Payload
-          rm -rf Payload build
+          rm -rf Payload build main.entitlements ext.entitlements
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
