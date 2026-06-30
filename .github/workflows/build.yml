@@ -15,7 +15,6 @@ jobs:
 
       - name: Archive for iOS Device
         run: |
-          # 移除脆弱的 destination，改用最稳定的 -sdk iphoneos
           xcodebuild archive \
             -scheme Ruddarr \
             -archivePath $(pwd)/build/Ruddarr.xcarchive \
@@ -41,10 +40,26 @@ jobs:
           
           echo "✅ 真实备用图标注册信息已成功注入 Info.plist"
 
-      - name: Create IPA
+      - name: Install ldid
+        run: brew install ldid
+
+      - name: Create IPA & Inject Entitlements
         run: |
+          APP_PATH="$(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app"
+          
+          # 自动寻找源码中的 entitlements 权限文件并使用 ldid 注入
+          ENTITLEMENTS=$(find . -name "*.entitlements" | head -n 1)
+          
+          if [ -n "$ENTITLEMENTS" ]; then
+            echo "✅ 找到权限配置文件: $ENTITLEMENTS，正在进行伪签名注入..."
+            ldid -S"$ENTITLEMENTS" "$APP_PATH/Ruddarr"
+          else
+            echo "⚠️ 未找到权限文件，使用默认 ldid 伪签名..."
+            ldid -S "$APP_PATH/Ruddarr"
+          fi
+          
           mkdir -p Payload
-          cp -R $(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app Payload/
+          cp -R "$APP_PATH" Payload/
           zip -r Ruddarr.ipa Payload
           rm -rf Payload build
 
