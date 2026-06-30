@@ -47,17 +47,29 @@ jobs:
         run: |
           APP_PATH="$(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app"
           
-          # 自动寻找源码中的 entitlements 权限文件并使用 ldid 注入
-          ENTITLEMENTS=$(find . -name "*.entitlements" | head -n 1)
+          # 1. 主程序注入 (排除扩展的 entitlements 文件)
+          MAIN_ENTITLEMENTS=$(find . -name "*.entitlements" | grep -v "NotificationService" | head -n 1)
           
-          if [ -n "$ENTITLEMENTS" ]; then
-            echo "✅ 找到权限配置文件: $ENTITLEMENTS，正在进行伪签名注入..."
-            ldid -S"$ENTITLEMENTS" "$APP_PATH/Ruddarr"
+          if [ -n "$MAIN_ENTITLEMENTS" ]; then
+            echo "✅ 找到主程序权限文件: $MAIN_ENTITLEMENTS"
+            ldid -S"$MAIN_ENTITLEMENTS" "$APP_PATH/Ruddarr"
           else
-            echo "⚠️ 未找到权限文件，使用默认 ldid 伪签名..."
+            echo "⚠️ 未找到主程序权限文件，使用默认签名..."
             ldid -S "$APP_PATH/Ruddarr"
           fi
           
+          # 2. 遍历并为所有应用扩展 (App Extensions) 注入基础伪签名
+          if [ -d "$APP_PATH/PlugIns" ]; then
+            echo "✅ 发现 PlugIns 目录，开始为扩展程序伪签名..."
+            find "$APP_PATH/PlugIns" -name "*.appex" | while read appex; do
+              # 提取扩展的二进制文件名称 (例如 NotificationService)
+              binary_name=$(basename "$appex" .appex)
+              echo "  - 正在签名扩展: $binary_name"
+              ldid -S "$appex/$binary_name"
+            done
+          fi
+          
+          # 3. 打包 IPA
           mkdir -p Payload
           cp -R "$APP_PATH" Payload/
           zip -r Ruddarr.ipa Payload
