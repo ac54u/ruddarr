@@ -12,10 +12,30 @@ extension View {
         modifier(ShimmerModifier(
             active: active,
             color: color,
-            highlight: highlight ?? color.mix(with: .white, by: 0.47),
+            highlight: highlight ?? color.mixed(with: .white, amount: 0.47),
             duration: duration,
             pause: pause,
             width: width
+        )        )
+    }
+}
+
+extension Color {
+    func mixed(with other: Color, amount: Double) -> Color {
+        let uiSelf = UIColor(self)
+        let uiOther = UIColor(other)
+
+        var r1: CGFloat = 0, g1: CGFloat = 0, b1: CGFloat = 0, a1: CGFloat = 0
+        var r2: CGFloat = 0, g2: CGFloat = 0, b2: CGFloat = 0, a2: CGFloat = 0
+
+        uiSelf.getRed(&r1, green: &g1, blue: &b1, alpha: &a1)
+        uiOther.getRed(&r2, green: &g2, blue: &b2, alpha: &a2)
+
+        return Color(uiColor: UIColor(
+            red: r1 + (r2 - r1) * amount,
+            green: g1 + (g2 - g1) * amount,
+            blue: b1 + (b2 - b1) * amount,
+            alpha: a1 + (a2 - a1) * amount
         ))
     }
 }

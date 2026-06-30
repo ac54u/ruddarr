@@ -7,32 +7,32 @@ struct ContentView: View {
 
     var body: some View {
         TabView(selection: selectedTab) {
-            Tab(movies.label, image: movies.icon, value: movies) {
-                MoviesView()
-            }
+            MoviesView()
+                .tabItem { Label(movies.label, image: movies.icon) }
+                .tag(TabItem.movies)
 
-            Tab(series.label, image: series.icon, value: series) {
-                SeriesView()
-            }
+            SeriesView()
+                .tabItem { Label(series.label, image: series.icon) }
+                .tag(TabItem.series)
 
-            Tab(calendar.label, systemImage: calendar.icon, value: calendar) {
-                CalendarView()
-            }
+            CalendarView()
+                .tabItem { Label(calendar.label, systemImage: calendar.icon) }
+                .tag(TabItem.calendar)
 
-            Tab(activity.label, systemImage: activity.icon, value: activity) {
-                ActivityView()
-            }
-            .badge(Queue.shared.itemsWithIssues)
+            ActivityView()
+                .tabItem { Label(activity.label, systemImage: activity.icon) }
+                .tag(TabItem.activity)
+                .badge(Queue.shared.itemsWithIssues)
 
             if deviceType == .pad {
-                Tab(history.label, systemImage: history.icon, value: history) {
-                    HistoryView()
-                }
+                HistoryView()
+                    .tabItem { Label(history.label, systemImage: history.icon) }
+                    .tag(TabItem.history)
             }
 
-            Tab(TabItem.settings.label, systemImage: TabItem.settings.icon, value: TabItem.settings) {
-                SettingsView()
-            }
+            SettingsView()
+                .tabItem { Label(TabItem.settings.label, systemImage: TabItem.settings.icon) }
+                .tag(TabItem.settings)
         }
         .onAppear {
             if !isRunningIn(.preview) {
