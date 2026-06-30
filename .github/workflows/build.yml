@@ -15,7 +15,7 @@ jobs:
 
       - name: Archive for iOS Device
         run: |
-          # 1. 彻底关闭 Xcode 签名，绕过 iOS 26.5 SDK 的 Ad-Hoc 限制
+          # 1. 彻底关闭 Xcode 签名校验，生成包含完整原生资源的 .app
           xcodebuild archive \
             -scheme Ruddarr \
             -archivePath $(pwd)/build/Ruddarr.xcarchive \
@@ -42,35 +42,34 @@ jobs:
           
           echo "✅ 真实备用图标注册信息已成功注入 Info.plist"
 
-      - name: Native macOS Codesign & Entitlements Injection
+      - name: Native macOS Codesign & Entitlements Sanitizer
         run: |
           APP_PATH="$(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app"
           
-          # 2. 从源码目录提取主程序的权限文件
-          MAIN_ENTITLEMENTS=$(find . -name "*.entitlements" | grep -v "NotificationService" | head -n 1)
+          # 2. 提取 Xcode 生成的默认权限文件
+          codesign -d --entitlements :- "$APP_PATH" > main.entitlements || echo '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><dict></dict></plist>' > main.entitlements
           
-          # 3. 优先使用苹果原生 codesign 工具为应用扩展 (App Extensions) 重签
+          # 3. 核心修复：强行剔除会导致巨魔闪退的"云端服务器强绑定"权限
+          echo "正在清洗 entitlements 中的越界权限..."
+          # 剔除远程推送权限
+          /usr/libexec/PlistBuddy -c "Delete :aps-environment" main.entitlements || true
+          # 剔除 iCloud 同步与键值存储权限
+          /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.icloud-container-identifiers" main.entitlements || true
+          /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.icloud-services" main.entitlements || true
+          /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.ubiquity-kvstore-identifier" main.entitlements || true
+          
+          # 4. 为所有的应用扩展 (NotificationService) 重签
           if [ -d "$APP_PATH/PlugIns" ]; then
             find "$APP_PATH/PlugIns" -name "*.appex" | while read appex; do
-              EXT_NAME=$(basename "$appex" .appex)
-              EXT_ENTITLEMENTS=$(find . -name "*.entitlements" | grep "$EXT_NAME" | head -n 1)
-              
-              echo "  - 正在用 Apple 官方工具重签扩展: $EXT_NAME"
-              if [ -n "$EXT_ENTITLEMENTS" ]; then
-                codesign --force --sign - --entitlements "$EXT_ENTITLEMENTS" "$appex"
-              else
-                codesign --force --sign - "$appex"
-              fi
+              echo "  - 正在用 Apple 官方工具重签扩展: $(basename "$appex")"
+              # 扩展通常不需要复杂权限，直接用空权限重签以防闪退
+              codesign --force --sign - "$appex"
             done
           fi
           
-          # 4. 使用苹果原生 codesign 工具为主程序重签并注入权限
-          echo "✅ 正在用 Apple 官方 codesign 工具重签主程序..."
-          if [ -n "$MAIN_ENTITLEMENTS" ]; then
-            codesign --force --sign - --entitlements "$MAIN_ENTITLEMENTS" "$APP_PATH"
-          else
-            codesign --force --sign - "$APP_PATH"
-          fi
+          # 5. 为主程序重签 (注入清洗后的本地安全权限)
+          echo "✅ 正在用清洗后的 entitlements 重签主程序..."
+          codesign --force --sign - --entitlements main.entitlements "$APP_PATH"
 
       - name: Create IPA
         run: |
@@ -78,7 +77,7 @@ jobs:
           mkdir -p Payload
           cp -R "$APP_PATH" Payload/
           zip -r Ruddarr.ipa Payload
-          rm -rf Payload build
+          rm -rf Payload build main.entitlements
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
