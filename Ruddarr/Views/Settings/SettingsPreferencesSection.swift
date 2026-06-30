@@ -137,7 +137,7 @@ struct SettingsPreferencesSection: View {
         switch taskState {
         case .success(let statuses):
             withAnimation {
-                subscriptionStatus = Subscription.status(from: statuses)
+                subscriptionStatus = isRunningIn(.debug) ? .subscribed : Subscription.status(from: statuses)
             }
 
             // leaveBreadcrumb(.info, category: "subscription", message: "SubscriptionStatusTask success", data: ["statuses": statuses])

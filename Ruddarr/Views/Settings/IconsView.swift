@@ -82,7 +82,7 @@ struct IconsView: View {
     ) async {
         switch taskState {
         case .success(let statuses):
-            entitledToService = Subscription.containsEntitledState(statuses)
+            entitledToService = isRunningIn(.debug) || Subscription.containsEntitledState(statuses)
             showSubscription = false
         case .failure(let error):
             leaveBreadcrumb(.error, category: "subscription", message: "SubscriptionStatusTask failed", data: ["error": error])
