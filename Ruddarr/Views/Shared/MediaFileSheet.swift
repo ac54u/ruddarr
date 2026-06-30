@@ -253,4 +253,3 @@ private struct MediaFileSheetPreview: View {
             }
         }
     }
-}
