@@ -188,7 +188,6 @@ private struct ButtonLabelPreview: View {
         } label: {
             ButtonLabel(text: "Download", icon: "arrow.down.circle", isLoading: isLoading)
         }
-        .buttonStyle(.glass)
         .fixedSize(horizontal: true, vertical: false)
 
         Button { } label: {
