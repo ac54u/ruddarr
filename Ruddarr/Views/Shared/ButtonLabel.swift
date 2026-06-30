@@ -241,6 +241,7 @@ private struct ButtonLabelPreview: View {
         }
 
         HStack(spacing: 10) {
+            let icons = ["magnifyingglass", "play.fill", "person.fill"]
             ForEach(icons, id: \.self) { icon in
                 Button {
                     isLoading.toggle()
