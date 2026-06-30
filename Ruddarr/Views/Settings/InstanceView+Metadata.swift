@@ -119,9 +119,7 @@ extension InstanceView {
                 }
             }
         }
-        #if os(iOS)
-            .listSectionSpacing(diskSpaceExpanded ? .default : .compact)
-        #endif
+
     }
 
     func loadSummary() async {

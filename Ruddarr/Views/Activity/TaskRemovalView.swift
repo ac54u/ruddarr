@@ -69,7 +69,7 @@ struct TaskRemovalView: View {
                         .hideIconOnMac()
                 }
             }
-            .buttonStyle(.glassProminent)
+            .buttonStyle(.borderedProminent)
             .tint(.red)
         }
     }

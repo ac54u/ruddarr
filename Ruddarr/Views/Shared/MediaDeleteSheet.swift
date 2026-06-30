@@ -65,7 +65,7 @@ struct MediaDeleteSheet: View {
                 }
             }
             .tint(.red)
-            .buttonStyle(.glassProminent)
+            .buttonStyle(.borderedProminent)
         }
     }
 }

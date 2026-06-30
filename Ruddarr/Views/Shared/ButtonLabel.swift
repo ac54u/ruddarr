@@ -175,18 +175,14 @@ struct MacMenuButtonLabelModifier: ViewModifier {
 
 // swiftlint:disable closure_body_length
 #Preview {
-    @Previewable @State var isLoading: Bool = false
+    ButtonLabelPreview()
+}
 
-    let icons = [
-        "arrow.up.forward",
-        "arrow.up.forward.app",
-        "arrow.down.app",
-        "arrow.down.to.line",
-        "bookmark",
-        "trash"
-    ]
+private struct ButtonLabelPreview: View {
+    @State var isLoading: Bool = false
 
-    VStack(spacing: 20) {
+    var body: some View {
+        VStack(spacing: 20) {
         Button {
             isLoading.toggle()
         } label: {
@@ -258,5 +254,6 @@ struct MacMenuButtonLabelModifier: ViewModifier {
     .padding()
     .withAppState()
     .macPreviewFrame()
+    }
 }
 // swiftlint:enable closure_body_length

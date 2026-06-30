@@ -231,19 +231,26 @@ struct MediaFileSheet: View {
 }
 
 #Preview {
-    @Previewable @State var show: Bool = false
+    MediaFileSheetPreview()
+}
 
-    let movies: [Movie] = PreviewData.load(name: "movies")
-    let movie = movies.first(where: { $0.id == 235 }) ?? movies[0]
+private struct MediaFileSheetPreview: View {
+    @State var show: Bool = false
 
-    Button {
-        show.toggle()
-    } label: {
-        Text(verbatim: "Hello")
-    }
-    .sheet(isPresented: $show) {
-        MediaFileSheet(file: movie.movieFile!, runtime: 42)
-            .presentationDetents([.fraction(0.8)])
-            .presentationBackground(.sheetBackground)
+    var body: some View {
+        let movies: [Movie] = PreviewData.load(name: "movies")
+        let movie = movies.first(where: { $0.id == 235 }) ?? movies[0]
+
+        Button {
+            show.toggle()
+        } label: {
+            Text(verbatim: "Hello")
+        }
+        .sheet(isPresented: $show) {
+            MediaFileSheet(file: movie.movieFile!, runtime: 42)
+                .presentationDetents([.fraction(0.8)])
+                .presentationBackground(.sheetBackground)
+            }
+        }
     }
 }

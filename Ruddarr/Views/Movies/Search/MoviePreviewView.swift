@@ -71,7 +71,7 @@ struct MoviePreviewView: View {
                 presentingForm = true
             }
             .hideIconOnMac()
-            .buttonStyle(.glassProminent)
+            .buttonStyle(.borderedProminent)
             .disabled(presentingForm)
         }
     }

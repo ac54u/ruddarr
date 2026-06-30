@@ -127,7 +127,7 @@ struct ProminentGlassButtonStyle: ViewModifier {
 
     func body(content: Content) -> some View {
         if condition {
-            content.buttonStyle(.glassProminent)
+            content.buttonStyle(.borderedProminent)
         } else {
             content
         }

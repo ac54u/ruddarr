@@ -2,8 +2,6 @@ import SwiftUI
 
 #if os(iOS)
 struct ContentView: View {
-    @State private var tabCustomization = TabViewCustomization()
-
     @EnvironmentObject var settings: AppSettings
     @Environment(\.deviceType) private var deviceType
 
@@ -30,19 +28,12 @@ struct ContentView: View {
                 Tab(history.label, systemImage: history.icon, value: history) {
                     HistoryView()
                 }
-                .customizationID("tab.history")
-                .defaultVisibility(.hidden, for: .tabBar)
-                // .customizationBehavior(.disabled, for: .tabBar, .sidebar)
             }
 
             Tab(TabItem.settings.label, systemImage: TabItem.settings.icon, value: TabItem.settings) {
                 SettingsView()
             }
-            .defaultVisibility(.hidden, for: .tabBar)
         }
-        .tabViewStyle(.sidebarAdaptable)
-        .tabViewCustomization($tabCustomization)
-        .tabBarMinimizeBehavior(.never)
         .onAppear {
             if !isRunningIn(.preview) {
                 dependencies.router.selectedTab = settings.tab

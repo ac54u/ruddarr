@@ -107,7 +107,7 @@ struct WhatsNewView: View {
                             .padding(.vertical, 8)
                             .frame(maxWidth: .infinity)
                     }
-                    .buttonStyle(.glassProminent)
+                    .buttonStyle(.borderedProminent)
                 }
 
                 Spacer()
@@ -216,13 +216,18 @@ private struct WhatsNewSheetViewModifier: ViewModifier {
 }
 
 #Preview {
-    @Previewable @State var show: Bool = true
+    WhatsNewPreview()
+}
 
-    return NavigationView {
-        Text(verbatim: "Cupidatat adipisicing elit dolor cillum.")
-    }.sheet(isPresented: $show, content: {
-        WhatsNewView()
-            // .environment(\.sizeCategory, .extraExtraLarge)
-    })
-    .tint(.brown)
+private struct WhatsNewPreview: View {
+    @State var show: Bool = true
+
+    var body: some View {
+        NavigationView {
+            Text(verbatim: "Cupidatat adipisicing elit dolor cillum.")
+        }.sheet(isPresented: $show, content: {
+            WhatsNewView()
+        })
+        .tint(.brown)
+    }
 }

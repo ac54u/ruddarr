@@ -72,7 +72,7 @@ struct SeriesPreviewView: View {
                 presentingForm = true
             }
             .hideIconOnMac()
-            .buttonStyle(.glassProminent)
+            .buttonStyle(.borderedProminent)
             .disabled(presentingForm)
         }
     }

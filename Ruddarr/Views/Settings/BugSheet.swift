@@ -32,7 +32,7 @@ struct BugSheet: View {
                     Button("Submit", systemImage: "paperplane") {
                         sendReport()
                     }
-                    .buttonStyle(.glassProminent)
+                    .buttonStyle(.borderedProminent)
                     .hideIconOnMac()
                     .disabled(!canBeSent)
                 }
@@ -127,11 +127,18 @@ private struct BugSheetViewModifier: ViewModifier {
 }
 
 #Preview {
-    @Previewable @Environment(\.presentBugSheet) var presentBugSheet
+    BugSheetPreview()
+}
 
-    Button {
-        presentBugSheet.wrappedValue = true
-    } label: {
-        Text(verbatim: "Open")
+private struct BugSheetPreview: View {
+    @Environment(\.presentBugSheet) var presentBugSheet
+
+    var body: some View {
+        Button {
+            presentBugSheet.wrappedValue = true
+        } label: {
+            Text(verbatim: "Open")
+        }
+        .reportBugSheet()
     }
 }
