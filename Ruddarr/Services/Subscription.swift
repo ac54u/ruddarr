@@ -7,10 +7,12 @@ class Subscription {
     static let name: String = "Ruddarr+"
 
     static func entitledToService() async -> Bool {
+        // FIXME: Revert to StoreKit-based entitlement check before App Store release
         true
     }
 
     static func entitlementStatus() async -> SubscriptionStatus? {
+        // FIXME: Revert to StoreKit-based status check before App Store release
         .subscribed
     }
 

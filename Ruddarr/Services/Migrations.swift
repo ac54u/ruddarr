@@ -4,7 +4,8 @@ class Migrations {
     static let key = "schemaVersion"
 
     static func run() {
-        let current = currentBuild()
+        guard let current = currentBuild() else { return }
+
         let stored = storedSchema()
 
         if stored != current {
@@ -19,13 +20,13 @@ class Migrations {
         // ...
     }
 
-    private static func currentBuild() -> Int {
+    private static func currentBuild() -> Int? {
         guard let string = Bundle.main.object(
             forInfoDictionaryKey: "CFBundleVersion"
         ) as? String, let build = Int(string) else {
-            assertionFailure("Could not parse CFBundleVersion")
+            leaveBreadcrumb(.fatal, category: "migrations", message: "Could not parse CFBundleVersion", data: ["version": string ?? "nil"])
 
-            return 0
+            return nil
         }
 
         return build

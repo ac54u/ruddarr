@@ -68,12 +68,12 @@ extension API {
             )
 
             return try await request(method: .put, url: url, headers: instance.auth, body: body)
-        }, deleteMovie: { movie, addExclusion, deleteFildes, instance in
+        }, deleteMovie: { movie, addExclusion, deleteFiles, instance in
             let url = try instance.baseURL()
                 .appending(path: "/api/v3/movie")
                 .appending(path: String(movie.id))
                 .appending(queryItems: [
-                    .init(name: "deleteFiles", value: deleteFildes ? "true" : "false"),
+                    .init(name: "deleteFiles", value: deleteFiles ? "true" : "false"),
                     .init(name: "addImportExclusion", value: addExclusion ? "true" : "false"),
                 ])
 
@@ -112,7 +112,7 @@ extension API {
 
             return try await request(url: url, headers: instance.auth, timeout: instance.timeout(.slow))
         }, lookupSeriesReleases: { seriesId, seasonId, episodeId, instance in
-            var url = URL(string: instance.url)!
+            var url = try instance.baseURL()
                 .appending(path: "/api/v3/release")
 
             if let episode = episodeId {
@@ -288,7 +288,7 @@ extension API {
 
             return try await request(url: url, headers: instance.auth)
         }, fetchHistory: { type, page, limit, instance in
-            var url = URL(string: instance.url)!
+            var url = try instance.baseURL()
                 .appending(path: "/api/v3/history")
                 .appending(queryItems: [
                     .init(name: "page", value: String(page)),

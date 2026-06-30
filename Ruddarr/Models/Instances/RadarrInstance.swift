@@ -63,6 +63,8 @@ class RadarrInstance {
             return nil
         }
 
+        let moviesSnapshot = movies.items
+
         do {
             async let rootFolders = dependencies.api.rootFolders(instance)
             async let qualityProfiles = dependencies.api.qualityProfiles(instance)
@@ -75,8 +77,8 @@ class RadarrInstance {
             return nil
         }
 
-        if !movies.items.isEmpty {
-            instance.stats = await InstanceStats.make(movies: movies.items)
+        if !moviesSnapshot.isEmpty {
+            instance.stats = await InstanceStats.make(movies: moviesSnapshot)
         }
 
         return instance

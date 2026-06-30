@@ -37,8 +37,8 @@ class SonarrInstance {
         self.series = SeriesModel(target)
         self.lookup = SeriesLookup(target)
         self.releases = SeriesReleases(target)
-        self.episodes = SeriesEpisodes(instance)
-        self.files = SeriesFiles(instance)
+        self.episodes = SeriesEpisodes(target)
+        self.files = SeriesFiles(target)
     }
 
     var id: UUID {
@@ -66,6 +66,8 @@ class SonarrInstance {
             return nil
         }
 
+        let seriesSnapshot = series.items
+
         do {
             async let rootFolders = dependencies.api.rootFolders(instance)
             async let qualityProfiles = dependencies.api.qualityProfiles(instance)
@@ -78,8 +80,8 @@ class SonarrInstance {
             return nil
         }
 
-        if !series.items.isEmpty {
-            instance.stats = await InstanceStats.make(series: series.items)
+        if !seriesSnapshot.isEmpty {
+            instance.stats = await InstanceStats.make(series: seriesSnapshot)
         }
 
         return instance

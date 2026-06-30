@@ -134,10 +134,10 @@ actor Notifications {
     }
 
     static func signature(_ message: String) -> String {
-        guard let secret = Bundle.main.object(forInfoDictionaryKey: "APNsKey") as? String else {
+        guard let secret = Bundle.main.object(forInfoDictionaryKey: "APNsKey") as? String, !secret.isEmpty else {
             leaveBreadcrumb(.fatal, category: "notifications", message: "Failed to load APNs key")
 
-            return "TESTING"
+            return ""
         }
 
         let key = SymmetricKey(data: Data(secret.utf8))
