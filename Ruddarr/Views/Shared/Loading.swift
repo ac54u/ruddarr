@@ -20,7 +20,7 @@ struct QueueStatusIcon: View {
             .accessibilityLabel(status.label)
 
         if status.pulses {
-            icon.symbolEffect(.pulse.byLayer, options: .repeat(.periodic(delay: 0.2)))
+            icon.symbolEffect(.pulse.byLayer, options: .repeat(.continuous))
         } else {
             icon
         }
