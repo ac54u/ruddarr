@@ -1,6 +1,5 @@
 import SwiftUI
 import Foundation
-import CloudStorage
 import Combine
 
 // We can't migrate this to `@Observable` because `@AppStorage` isn't supported
@@ -10,7 +9,7 @@ class AppSettings: ObservableObject {
     #if DEBUG
         @AppStorage("debugInstances", store: dependencies.store) var instances: [Instance] = []
     #else
-        @CloudStorage("instances") var instances: [Instance] = []
+        @AppStorage("instances", store: dependencies.store) var instances: [Instance] = []
     #endif
 
     @AppStorage("icon", store: dependencies.store) var icon: AppIcon = .factory
