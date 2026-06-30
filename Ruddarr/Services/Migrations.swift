@@ -21,10 +21,10 @@ class Migrations {
     }
 
     private static func currentBuild() -> Int? {
-        guard let string = Bundle.main.object(
-            forInfoDictionaryKey: "CFBundleVersion"
-        ) as? String, let build = Int(string) else {
-            leaveBreadcrumb(.fatal, category: "migrations", message: "Could not parse CFBundleVersion", data: ["version": string ?? "nil"])
+        let rawVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
+
+        guard let string = rawVersion, let build = Int(string) else {
+            leaveBreadcrumb(.fatal, category: "migrations", message: "Could not parse CFBundleVersion", data: ["version": rawVersion ?? "nil"])
 
             return nil
         }
