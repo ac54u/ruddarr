@@ -7,6 +7,10 @@ class Subscription {
     static let name: String = "Ruddarr+"
 
     static func entitledToService() async -> Bool {
+        if isRunningIn(.debug) {
+            return true
+        }
+
         do {
             let subscriptions = try await Product.SubscriptionInfo.status(for: group)
             return containsEntitledState(subscriptions)
