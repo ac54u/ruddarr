@@ -15,16 +15,15 @@ jobs:
 
       - name: Archive for iOS Device
         run: |
-          # 关键修改：使用 CODE_SIGN_IDENTITY="-" 让 Xcode 原生生成 Ad-Hoc 签名
-          # 这样 Xcode 会自动处理所有 Entitlements 变量，且不会报错
+          # 1. 彻底关闭 Xcode 签名，绕过 iOS 26.5 SDK 的 Ad-Hoc 限制
           xcodebuild archive \
             -scheme Ruddarr \
             -archivePath $(pwd)/build/Ruddarr.xcarchive \
             -skipPackagePluginValidation \
             -sdk iphoneos \
-            CODE_SIGN_IDENTITY="-" \
-            CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGNING_ALLOWED=YES
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO
 
       - name: Inject Alternate Icons into Info.plist
         run: |
@@ -43,30 +42,35 @@ jobs:
           
           echo "✅ 真实备用图标注册信息已成功注入 Info.plist"
 
-      - name: Re-Sign with macOS Native codesign
+      - name: Native macOS Codesign & Entitlements Injection
         run: |
-          # 修改 Info.plist 会导致刚才的签名失效，我们使用苹果官方工具重签
           APP_PATH="$(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app"
           
-          # 1. 提取 Xcode 刚刚完美生成的官方权限文件
-          codesign -d --entitlements :- "$APP_PATH" > main.entitlements
+          # 2. 从源码目录提取主程序的权限文件
+          MAIN_ENTITLEMENTS=$(find . -name "*.entitlements" | grep -v "NotificationService" | head -n 1)
           
-          # 2. 为所有的应用扩展 (NotificationService) 重签
+          # 3. 优先使用苹果原生 codesign 工具为应用扩展 (App Extensions) 重签
           if [ -d "$APP_PATH/PlugIns" ]; then
             find "$APP_PATH/PlugIns" -name "*.appex" | while read appex; do
-              echo "  - 正在用 Apple 官方工具重签扩展: $(basename "$appex")"
-              codesign -d --entitlements :- "$appex" > ext.entitlements || true
-              if [ -s ext.entitlements ]; then
-                codesign --force --sign - --entitlements ext.entitlements "$appex"
+              EXT_NAME=$(basename "$appex" .appex)
+              EXT_ENTITLEMENTS=$(find . -name "*.entitlements" | grep "$EXT_NAME" | head -n 1)
+              
+              echo "  - 正在用 Apple 官方工具重签扩展: $EXT_NAME"
+              if [ -n "$EXT_ENTITLEMENTS" ]; then
+                codesign --force --sign - --entitlements "$EXT_ENTITLEMENTS" "$appex"
               else
                 codesign --force --sign - "$appex"
               fi
             done
           fi
           
-          # 3. 为主程序重签
+          # 4. 使用苹果原生 codesign 工具为主程序重签并注入权限
           echo "✅ 正在用 Apple 官方 codesign 工具重签主程序..."
-          codesign --force --sign - --entitlements main.entitlements "$APP_PATH"
+          if [ -n "$MAIN_ENTITLEMENTS" ]; then
+            codesign --force --sign - --entitlements "$MAIN_ENTITLEMENTS" "$APP_PATH"
+          else
+            codesign --force --sign - "$APP_PATH"
+          fi
 
       - name: Create IPA
         run: |
@@ -74,7 +78,7 @@ jobs:
           mkdir -p Payload
           cp -R "$APP_PATH" Payload/
           zip -r Ruddarr.ipa Payload
-          rm -rf Payload build main.entitlements ext.entitlements
+          rm -rf Payload build
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
