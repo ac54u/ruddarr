@@ -56,6 +56,11 @@ actor Telemetry {
         }
 
         Task(priority: .background) {
+            guard !isRunningIn(.debug) else {
+                leaveBreadcrumb(.info, category: "telemetry", message: "Skipping ping (debug build)")
+                return
+            }
+
             guard dependencies.cloudkit == .live else {
                 leaveBreadcrumb(.info, category: "telemetry", message: "Skipping ping (CloudKit mock)")
                 return

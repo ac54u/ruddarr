@@ -140,7 +140,7 @@ class InstanceWebhook {
     }
 
     private func fetchCloudKitUser() async {
-        if dependencies.cloudkit == .mock {
+        if dependencies.cloudkit == .mock || isRunningIn(.debug) {
             accountId = CKRecord.ID.mock
 
             return

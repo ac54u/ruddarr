@@ -25,7 +25,7 @@ actor Notifications {
 
     static func registerDevice(_ token: String) async {
         do {
-            let account = dependencies.cloudkit == .live
+            let account = dependencies.cloudkit == .live && !isRunningIn(.debug)
                 ? try await CKContainer.default().userRecordID().recordName
                 : CKRecord.ID.mock.recordName
 
@@ -96,7 +96,7 @@ actor Notifications {
                 return
             }
 
-            if dependencies.cloudkit == .live {
+            if dependencies.cloudkit == .live && !isRunningIn(.debug) {
                 let cloudkit = CKContainer.default()
                 let cloudKitStatus = try? await cloudkit.accountStatus()
 
