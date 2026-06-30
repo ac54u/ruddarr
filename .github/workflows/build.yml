@@ -15,11 +15,12 @@ jobs:
 
       - name: Archive for iOS Device
         run: |
+          # 移除脆弱的 destination，改用最稳定的 -sdk iphoneos
           xcodebuild archive \
             -scheme Ruddarr \
             -archivePath $(pwd)/build/Ruddarr.xcarchive \
             -skipPackagePluginValidation \
-            -destination 'generic/platform/iOS' \
+            -sdk iphoneos \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO
@@ -28,10 +29,8 @@ jobs:
         run: |
           PLIST_PATH="$(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app/Info.plist"
           
-          # 初始化 CFBundleAlternateIcons 字典
           /usr/libexec/PlistBuddy -c "Add :CFBundleIcons:CFBundleAlternateIcons dict" "$PLIST_PATH" || true
           
-          # 遍历并注入源码 Theme.swift 中真实存在的备用图标
           ICONS=("AppIconPodcasts" "AppIconMusic" "AppIconBooks" "AppIconMono" "AppIconBarbie" "AppIconPlex" "AppIconTelegram" "AppIconWarp" "AppIconATP")
           
           for ICON in "${ICONS[@]}"; do
