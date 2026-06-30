@@ -1,24 +1,37 @@
-name: CI
+name: Build IPA
 
 on:
   push:
     branches: [develop, main]
-  pull_request:
-    branches: [develop, main]
+  workflow_dispatch:
 
 jobs:
-  build-and-test:
-    name: Build & Test
+  build:
+    name: Build iOS IPA
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build and Test
+      - name: Build for iOS Device
         run: |
-          xcodebuild test \
+          xcodebuild build \
             -scheme Ruddarr \
             -skipPackagePluginValidation \
-            -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
+            -destination 'generic/platform=iOS' \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO
+
+      - name: Create IPA
+        run: |
+          APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData -name "Ruddarr.app" -path "*/Debug-iphoneos/*" | head -1)
+          mkdir -p Payload
+          cp -R "$APP_PATH" Payload/
+          zip -r Ruddarr.ipa Payload
+          rm -rf Payload
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ruddarr.ipa
+          path: Ruddarr.ipa
