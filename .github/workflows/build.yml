@@ -9,26 +9,45 @@ jobs:
   build:
     name: Build iOS IPA
     runs-on: macos-26
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build for iOS Device
+      - name: Archive for iOS Device
         run: |
-          xcodebuild build \
+          xcodebuild archive \
             -scheme Ruddarr \
+            -archivePath $(pwd)/build/Ruddarr.xcarchive \
             -skipPackagePluginValidation \
-            -destination 'generic/platform=iOS' \
+            -destination 'generic/platform/iOS' \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO
 
+      - name: Inject Alternate Icons into Info.plist
+        run: |
+          PLIST_PATH="$(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app/Info.plist"
+          
+          # 初始化 CFBundleAlternateIcons 字典
+          /usr/libexec/PlistBuddy -c "Add :CFBundleIcons:CFBundleAlternateIcons dict" "$PLIST_PATH" || true
+          
+          # 遍历并注入源码 Theme.swift 中真实存在的备用图标
+          ICONS=("AppIconPodcasts" "AppIconMusic" "AppIconBooks" "AppIconMono" "AppIconBarbie" "AppIconPlex" "AppIconTelegram" "AppIconWarp" "AppIconATP")
+          
+          for ICON in "${ICONS[@]}"; do
+            /usr/libexec/PlistBuddy -c "Add :CFBundleIcons:CFBundleAlternateIcons:$ICON dict" "$PLIST_PATH" || true
+            /usr/libexec/PlistBuddy -c "Add :CFBundleIcons:CFBundleAlternateIcons:$ICON:CFBundleIconFiles array" "$PLIST_PATH" || true
+            /usr/libexec/PlistBuddy -c "Add :CFBundleIcons:CFBundleAlternateIcons:$ICON:CFBundleIconFiles:0 string $ICON" "$PLIST_PATH" || true
+          done
+          
+          echo "✅ 真实备用图标注册信息已成功注入 Info.plist"
+
       - name: Create IPA
         run: |
-          APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData -name "Ruddarr.app" -path "*/Debug-iphoneos/*" | head -1)
           mkdir -p Payload
-          cp -R "$APP_PATH" Payload/
+          cp -R $(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app Payload/
           zip -r Ruddarr.ipa Payload
-          rm -rf Payload
+          rm -rf Payload build
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
