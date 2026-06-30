@@ -86,6 +86,10 @@ actor Notifications {
 
     static func maybeUpdateWebhooks(_ settings: AppSettings) {
         Task.detached { [settings] in
+            guard Bundle.main.url(forResource: "embedded", withExtension: "mobileprovision") != nil else {
+                return
+            }
+
             let instances = await settings.instances
 
             let updateNeeded = instances.map {

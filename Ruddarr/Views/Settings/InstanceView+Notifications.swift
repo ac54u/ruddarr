@@ -244,6 +244,12 @@ extension InstanceView {
     }
 
     func setAppNotificationsStatus() async {
+        guard Bundle.main.url(forResource: "embedded", withExtension: "mobileprovision") != nil else {
+            notificationsAllowed = false
+            instanceNotifications = false
+            return
+        }
+
         let status = await Notifications.authorizationStatus()
 
         switch status {
