@@ -53,7 +53,11 @@ struct IconsView: View {
                         settings.icon = icon
 
                         #if os(iOS)
-                            UIApplication.shared.setAlternateIconName(icon.asset)
+                            UIApplication.shared.setAlternateIconName(icon.asset) { error in
+                                if let error {
+                                    leaveBreadcrumb(.error, category: "appIcon", message: "setAlternateIconName failed", data: ["error": error])
+                                }
+                            }
                         #endif
                     } else {
                         showSubscription = true
