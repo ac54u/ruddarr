@@ -45,14 +45,15 @@ jobs:
         run: |
           APP_PATH="$(pwd)/build/Ruddarr.xcarchive/Products/Applications/Ruddarr.app"
           
-          # 1. 核心修复：直接从源码中拷贝原版权限文件，确保 App Groups 等本地权限不丢失
+          # 1. 直接从源码中拷贝原版权限文件
           SOURCE_ENTITLEMENTS=$(find . -name "*.entitlements" | grep -v "Notification" | grep -v "Widget" | head -n 1)
           echo "✅ 找到源码主权限文件: $SOURCE_ENTITLEMENTS"
           cp "$SOURCE_ENTITLEMENTS" main.entitlements
           
-          # 2. 清洗会导致巨魔闪退的"云端服务器强绑定"权限
+          # 2. 清洗会导致巨魔闪退的"云端服务器强绑定"权限 (双管齐下)
           echo "正在清洗 entitlements 中的越界权限..."
           /usr/libexec/PlistBuddy -c "Delete :aps-environment" main.entitlements || true
+          /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.aps-environment" main.entitlements || true
           /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.icloud-container-identifiers" main.entitlements || true
           /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.icloud-services" main.entitlements || true
           /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.ubiquity-kvstore-identifier" main.entitlements || true
@@ -67,6 +68,7 @@ jobs:
               if [ -n "$EXT_ENTITLEMENTS" ]; then
                 cp "$EXT_ENTITLEMENTS" ext.entitlements
                 /usr/libexec/PlistBuddy -c "Delete :aps-environment" ext.entitlements || true
+                /usr/libexec/PlistBuddy -c "Delete :com.apple.developer.aps-environment" ext.entitlements || true
                 codesign --force --sign - --entitlements ext.entitlements "$appex"
               else
                 codesign --force --sign - "$appex"
@@ -74,7 +76,7 @@ jobs:
             done
           fi
           
-          # 4. 为主程序重签 (注入带有原生 App Groups 且去除了 APNs 的安全权限)
+          # 4. 为主程序重签
           echo "✅ 正在用清洗后的 entitlements 重签主程序..."
           codesign --force --sign - --entitlements main.entitlements "$APP_PATH"
 
