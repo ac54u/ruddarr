@@ -151,7 +151,7 @@ extension Toast {
     func render(_ message: Toast.Message) -> some View {
         message.view
             .padding()
-            .glassEffect()
+            .background(.regularMaterial, in: Capsule())
             .overlay(
                 Capsule().stroke(.ultraThinMaterial, lineWidth: 1)
             )
