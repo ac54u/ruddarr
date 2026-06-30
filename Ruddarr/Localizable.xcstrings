@@ -26,14 +26,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "(%lld Issue)"
+                  "state": "translated",
+                  "value": "（%lld 个问题）"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "(%lld Issues)"
+                  "state": "translated",
+                  "value": "（%lld 个问题）"
                 }
               }
             }
@@ -52,8 +52,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%1$@ at %2$@"
+            "state": "translated",
+            "value": "%1$@ %2$@"
           }
         }
       }
@@ -68,8 +68,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ does not start an automatic search when adding media, but you can."
+            "state": "translated",
+            "value": "%@ 在添加媒体时不会自动搜索，但你可以手动搜索。"
           }
         }
       }
@@ -84,8 +84,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ years"
+            "state": "translated",
+            "value": "%@ 年"
           }
         }
       }
@@ -101,8 +101,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@."
+            "state": "translated",
+            "value": "%@。"
           }
         }
       }
@@ -117,8 +117,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%1$@ downloaded successfully and imported from %2$@."
+            "state": "translated",
+            "value": "%1$@ 下载成功，已从 %2$@ 导入。"
           }
         }
       }
@@ -133,8 +133,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%1$@ grabbed from %2$@ and sent to %3$@."
+            "state": "translated",
+            "value": "%1$@ 已从 %2$@ 抓取并发送至 %3$@。"
           }
         }
       }
@@ -164,14 +164,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%d day"
+                  "state": "translated",
+                  "value": "%d 天"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%d days"
+                  "state": "translated",
+                  "value": "%d 天"
                 }
               }
             }
@@ -204,14 +204,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%d hour"
+                  "state": "translated",
+                  "value": "%d 小时"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%d hours"
+                  "state": "translated",
+                  "value": "%d 小时"
                 }
               }
             }
@@ -244,14 +244,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%d minute"
+                  "state": "translated",
+                  "value": "%d 分钟"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%d minutes"
+                  "state": "translated",
+                  "value": "%d 分钟"
                 }
               }
             }
@@ -284,14 +284,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%d month"
+                  "state": "translated",
+                  "value": "%d 个月"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%d months"
+                  "state": "translated",
+                  "value": "%d 个月"
                 }
               }
             }
@@ -324,14 +324,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Episode"
+                  "state": "translated",
+                  "value": "%lld 集"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Episodes"
+                  "state": "translated",
+                  "value": "%lld 集"
                 }
               }
             }
@@ -364,14 +364,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Movie"
+                  "state": "translated",
+                  "value": "%lld 部电影"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Movies"
+                  "state": "translated",
+                  "value": "%lld 部电影"
                 }
               }
             }
@@ -404,14 +404,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Season"
+                  "state": "translated",
+                  "value": "%lld 季"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Seasons"
+                  "state": "translated",
+                  "value": "%lld 季"
                 }
               }
             }
@@ -444,14 +444,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Season"
+                  "state": "translated",
+                  "value": "%lld 季"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Seasons"
+                  "state": "translated",
+                  "value": "%lld 季"
                 }
               }
             }
@@ -484,14 +484,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Series"
+                  "state": "translated",
+                  "value": "%lld 部剧集"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Series"
+                  "state": "translated",
+                  "value": "%lld 部剧集"
                 }
               }
             }
@@ -524,14 +524,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Tag"
+                  "state": "translated",
+                  "value": "%lld 个标签"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Tags"
+                  "state": "translated",
+                  "value": "%lld 个标签"
                 }
               }
             }
@@ -564,14 +564,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Task"
+                  "state": "translated",
+                  "value": "%lld 个任务"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "%lld Tasks"
+                  "state": "translated",
+                  "value": "%lld 个任务"
                 }
               }
             }
@@ -604,14 +604,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "+%lld more..."
+                  "state": "translated",
+                  "value": "+%lld 更多..."
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "+%lld more..."
+                  "state": "translated",
+                  "value": "+%lld 更多..."
                 }
               }
             }
@@ -630,8 +630,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "About"
+            "state": "translated",
+            "value": "关于"
           }
         }
       }
@@ -646,8 +646,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Accent Color"
+            "state": "translated",
+            "value": "强调色"
           }
         }
       }
@@ -663,8 +663,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Active"
+            "state": "translated",
+            "value": "已激活"
           }
         }
       }
@@ -680,8 +680,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Activity"
+            "state": "translated",
+            "value": "活动"
           }
         }
       }
@@ -697,8 +697,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Add Authentication"
+            "state": "translated",
+            "value": "添加认证"
           }
         }
       }
@@ -713,8 +713,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Add Exclusion"
+            "state": "translated",
+            "value": "添加排除"
           }
         }
       }
@@ -730,8 +730,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Add Header"
+            "state": "translated",
+            "value": "添加 Header"
           }
         }
       }
@@ -746,8 +746,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Add Instance"
+            "state": "translated",
+            "value": "添加实例"
           }
         }
       }
@@ -762,8 +762,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Add Movie"
+            "state": "translated",
+            "value": "添加电影"
           }
         }
       }
@@ -778,8 +778,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Add Series"
+            "state": "translated",
+            "value": "添加剧集"
           }
         }
       }
@@ -795,8 +795,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Added"
+            "state": "translated",
+            "value": "已添加"
           }
         }
       }
@@ -812,8 +812,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Age"
+            "state": "translated",
+            "value": "年龄"
           }
         }
       }
@@ -829,8 +829,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Airing"
+            "state": "translated",
+            "value": "播出中"
           }
         }
       }
@@ -846,8 +846,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Alias"
+            "state": "translated",
+            "value": "别名"
           }
         }
       }
@@ -863,8 +863,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "All Episodes"
+            "state": "translated",
+            "value": "所有集数"
           }
         }
       }
@@ -880,8 +880,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "All Events"
+            "state": "translated",
+            "value": "所有事件"
           }
         }
       }
@@ -896,8 +896,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "All instance queues are empty."
+            "state": "translated",
+            "value": "所有实例队列为空。"
           }
         }
       }
@@ -913,8 +913,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "All Movies"
+            "state": "translated",
+            "value": "所有电影"
           }
         }
       }
@@ -929,8 +929,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "All TV Series"
+            "state": "translated",
+            "value": "所有电视剧"
           }
         }
       }
@@ -945,8 +945,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Alternatively, %@ comes with many notification integrations that can be self-hosted."
+            "state": "translated",
+            "value": "或者，%@ 自带许多可自行托管的消息通知集成。"
           }
         }
       }
@@ -961,8 +961,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "An error occurred."
+            "state": "translated",
+            "value": "发生错误。"
           }
         }
       }
@@ -977,8 +977,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "An unexpected error occurred."
+            "state": "translated",
+            "value": "发生意外错误。"
           }
         }
       }
@@ -993,8 +993,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "An unknown error occurred: %@"
+            "state": "translated",
+            "value": "发生未知错误：%@"
           }
         }
       }
@@ -1010,8 +1010,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Anime"
+            "state": "translated",
+            "value": "动漫"
           }
         }
       }
@@ -1027,8 +1027,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Announced"
+            "state": "translated",
+            "value": "已公布"
           }
         }
       }
@@ -1044,8 +1044,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Any"
+            "state": "translated",
+            "value": "全部"
           }
         }
       }
@@ -1060,8 +1060,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Any Client"
+            "state": "translated",
+            "value": "任意客户端"
           }
         }
       }
@@ -1077,8 +1077,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Any Folder"
+            "state": "translated",
+            "value": "任意文件夹"
           }
         }
       }
@@ -1093,8 +1093,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Any Format"
+            "state": "translated",
+            "value": "任意格式"
           }
         }
       }
@@ -1109,8 +1109,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Any Indexer"
+            "state": "translated",
+            "value": "任意索引器"
           }
         }
       }
@@ -1125,8 +1125,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Any Instance"
+            "state": "translated",
+            "value": "任意实例"
           }
         }
       }
@@ -1141,8 +1141,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Any Language"
+            "state": "translated",
+            "value": "任意语言"
           }
         }
       }
@@ -1157,8 +1157,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Any Protocol"
+            "state": "translated",
+            "value": "任意协议"
           }
         }
       }
@@ -1173,8 +1173,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Any Quality"
+            "state": "translated",
+            "value": "任意质量"
           }
         }
       }
@@ -1189,8 +1189,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "API Key"
+            "state": "translated",
+            "value": "API 密钥"
           }
         }
       }
@@ -1205,8 +1205,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "App Icon"
+            "state": "translated",
+            "value": "应用图标"
           }
         }
       }
@@ -1221,8 +1221,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Appearance"
+            "state": "translated",
+            "value": "外观"
           }
         }
       }
@@ -1237,8 +1237,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Application Updated"
+            "state": "translated",
+            "value": "应用已更新"
           }
         }
       }
@@ -1254,8 +1254,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Approved"
+            "state": "translated",
+            "value": "已批准"
           }
         }
       }
@@ -1270,8 +1270,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Are you attempting to connect to a private IP address from outside its network?"
+            "state": "translated",
+            "value": "是否尝试从网络外部连接到私有 IP 地址？"
           }
         }
       }
@@ -1286,8 +1286,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Are you sure you want to delete the instance?"
+            "state": "translated",
+            "value": "确定要删除该实例吗？"
           }
         }
       }
@@ -1302,8 +1302,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Are you sure you want to erase all settings?"
+            "state": "translated",
+            "value": "确定要清除所有设置吗？"
           }
         }
       }
@@ -1318,8 +1318,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Are you sure?"
+            "state": "translated",
+            "value": "确定吗？"
           }
         }
       }
@@ -1334,8 +1334,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Ascending"
+            "state": "translated",
+            "value": "升序"
           }
         }
       }
@@ -1351,8 +1351,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "At least you're not on hold."
+            "state": "translated",
+            "value": "至少你没有在等待。"
           }
         }
       }
@@ -1367,8 +1367,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Audio"
+            "state": "translated",
+            "value": "音频"
           }
         }
       }
@@ -1383,8 +1383,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Authentication"
+            "state": "translated",
+            "value": "认证"
           }
         }
       }
@@ -1400,8 +1400,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Automatic"
+            "state": "translated",
+            "value": "自动"
           }
         }
       }
@@ -1416,8 +1416,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Automatic Search"
+            "state": "translated",
+            "value": "自动搜索"
           }
         }
       }
@@ -1433,8 +1433,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Availability"
+            "state": "translated",
+            "value": "可用性"
           }
         }
       }
@@ -1449,8 +1449,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Bad status code: %lld"
+            "state": "translated",
+            "value": "错误状态码：%lld"
           }
         }
       }
@@ -1466,7 +1466,7 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
+            "state": "translated",
             "value": "Barbie"
           }
         }
@@ -1482,7 +1482,7 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
+            "state": "translated",
             "value": "Basic Authentication"
           }
         }
@@ -1498,8 +1498,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Basic Authentication is for advanced server management tools and will not work with regular %@ login credentials."
+            "state": "translated",
+            "value": "Basic Authentication 适用于高级服务器管理工具，无法使用常规的 %@ 登录凭据。"
           }
         }
       }
@@ -1515,8 +1515,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Bitrate"
+            "state": "translated",
+            "value": "比特率"
           }
         }
       }
@@ -1531,8 +1531,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Blocklist Release"
+            "state": "translated",
+            "value": "加入黑名单"
           }
         }
       }
@@ -1547,8 +1547,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Blocks this release from being redownloaded via Automatic Search or RSS."
+            "state": "translated",
+            "value": "阻止该发布通过自动搜索或 RSS 重新下载。"
           }
         }
       }
@@ -1564,8 +1564,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Books"
+            "state": "translated",
+            "value": "图书"
           }
         }
       }
@@ -1580,8 +1580,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Bug Report Sent"
+            "state": "translated",
+            "value": "Bug 报告已发送"
           }
         }
       }
@@ -1597,8 +1597,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Calendar"
+            "state": "translated",
+            "value": "日历"
           }
         }
       }
@@ -1613,8 +1613,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Cancel"
+            "state": "translated",
+            "value": "取消"
           }
         }
       }
@@ -1630,8 +1630,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Cards"
+            "state": "translated",
+            "value": "卡片"
           }
         }
       }
@@ -1647,8 +1647,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Channels"
+            "state": "translated",
+            "value": "声道"
           }
         }
       }
@@ -1663,8 +1663,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Check the spelling or try [adding the movie](%@)."
+            "state": "translated",
+            "value": "请检查拼写或尝试[添加电影](%@)。"
           }
         }
       }
@@ -1679,8 +1679,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Check the spelling or try [adding the series](%@)."
+            "state": "translated",
+            "value": "请检查拼写或尝试[添加剧集](%@)。"
           }
         }
       }
@@ -1695,8 +1695,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Clear Filters"
+            "state": "translated",
+            "value": "清除筛选"
           }
         }
       }
@@ -1711,8 +1711,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Clear Image Cache"
+            "state": "translated",
+            "value": "清除图片缓存"
           }
         }
       }
@@ -1727,8 +1727,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Client"
+            "state": "translated",
+            "value": "客户端"
           }
         }
       }
@@ -1743,8 +1743,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Close"
+            "state": "translated",
+            "value": "关闭"
           }
         }
       }
@@ -1760,8 +1760,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Codec"
+            "state": "translated",
+            "value": "编码"
           }
         }
       }
@@ -1777,8 +1777,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Color Depth"
+            "state": "translated",
+            "value": "色彩深度"
           }
         }
       }
@@ -1793,8 +1793,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Connect a %1$@ instance under %2$@."
+            "state": "translated",
+            "value": "在 %2$@ 下连接 %1$@ 实例。"
           }
         }
       }
@@ -1809,8 +1809,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Connected"
+            "state": "translated",
+            "value": "已连接"
           }
         }
       }
@@ -1825,8 +1825,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Connecting..."
+            "state": "translated",
+            "value": "连接中..."
           }
         }
       }
@@ -1841,8 +1841,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Connection Failed"
+            "state": "translated",
+            "value": "连接失败"
           }
         }
       }
@@ -1857,8 +1857,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Connection Failure"
+            "state": "translated",
+            "value": "连接失败"
           }
         }
       }
@@ -1874,8 +1874,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Continue"
+            "state": "translated",
+            "value": "继续"
           }
         }
       }
@@ -1891,8 +1891,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Continuing"
+            "state": "translated",
+            "value": "续播"
           }
         }
       }
@@ -1908,8 +1908,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Contribute"
+            "state": "translated",
+            "value": "贡献"
           }
         }
       }
@@ -1924,8 +1924,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Contribute on GitHub"
+            "state": "translated",
+            "value": "在 GitHub 上贡献"
           }
         }
       }
@@ -1940,8 +1940,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Copy Link"
+            "state": "translated",
+            "value": "复制链接"
           }
         }
       }
@@ -1956,8 +1956,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Custom Format"
+            "state": "translated",
+            "value": "自定义格式"
           }
         }
       }
@@ -1973,8 +1973,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Custom Formats"
+            "state": "translated",
+            "value": "自定义格式"
           }
         }
       }
@@ -1989,8 +1989,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Custom Headers can be used to access instances protected by Zero Trust services."
+            "state": "translated",
+            "value": "自定义 Header 可用于访问受 Zero Trust 服务保护的实例。"
           }
         }
       }
@@ -2006,8 +2006,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Custom Score"
+            "state": "translated",
+            "value": "自定义评分"
           }
         }
       }
@@ -2023,8 +2023,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Daily"
+            "state": "translated",
+            "value": "每日"
           }
         }
       }
@@ -2040,8 +2040,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Dangling"
+            "state": "translated",
+            "value": "悬空"
           }
         }
       }
@@ -2057,8 +2057,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Dark"
+            "state": "translated",
+            "value": "深色"
           }
         }
       }
@@ -2074,8 +2074,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Default"
+            "state": "translated",
+            "value": "默认"
           }
         }
       }
@@ -2090,8 +2090,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Delete"
+            "state": "translated",
+            "value": "删除"
           }
         }
       }
@@ -2106,8 +2106,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Delete File"
+            "state": "translated",
+            "value": "删除文件"
           }
         }
       }
@@ -2122,8 +2122,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Delete Files"
+            "state": "translated",
+            "value": "删除文件"
           }
         }
       }
@@ -2138,8 +2138,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Delete Instance"
+            "state": "translated",
+            "value": "删除实例"
           }
         }
       }
@@ -2154,8 +2154,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Delete Movie"
+            "state": "translated",
+            "value": "删除电影"
           }
         }
       }
@@ -2170,8 +2170,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Delete Series"
+            "state": "translated",
+            "value": "删除剧集"
           }
         }
       }
@@ -2186,8 +2186,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Delete Spotlight Index"
+            "state": "translated",
+            "value": "删除 Spotlight 索引"
           }
         }
       }
@@ -2203,8 +2203,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Deleted"
+            "state": "translated",
+            "value": "已删除"
           }
         }
       }
@@ -2220,8 +2220,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Deleting Files"
+            "state": "translated",
+            "value": "正在删除文件"
           }
         }
       }
@@ -2236,8 +2236,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Descending"
+            "state": "translated",
+            "value": "降序"
           }
         }
       }
@@ -2252,8 +2252,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Details"
+            "state": "translated",
+            "value": "详情"
           }
         }
       }
@@ -2269,8 +2269,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Digital Release"
+            "state": "translated",
+            "value": "数字发布"
           }
         }
       }
@@ -2285,8 +2285,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Direction"
+            "state": "translated",
+            "value": "方向"
           }
         }
       }
@@ -2302,8 +2302,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Discovering new ways of making you wait."
+            "state": "translated",
+            "value": "正在寻找让你等待的新方式。"
           }
         }
       }
@@ -2318,8 +2318,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Disk Space"
+            "state": "translated",
+            "value": "磁盘空间"
           }
         }
       }
@@ -2335,8 +2335,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Display"
+            "state": "translated",
+            "value": "显示"
           }
         }
       }
@@ -2352,8 +2352,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Download"
+            "state": "translated",
+            "value": "下载"
           }
         }
       }
@@ -2369,8 +2369,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "download client"
+            "state": "translated",
+            "value": "下载客户端"
           }
         }
       }
@@ -2386,8 +2386,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Download Client Unavailable"
+            "state": "translated",
+            "value": "下载客户端不可用"
           }
         }
       }
@@ -2403,8 +2403,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Download Client Warning"
+            "state": "translated",
+            "value": "下载客户端警告"
           }
         }
       }
@@ -2420,8 +2420,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Download Failed"
+            "state": "translated",
+            "value": "下载失败"
           }
         }
       }
@@ -2437,8 +2437,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Download Ignored"
+            "state": "translated",
+            "value": "下载已忽略"
           }
         }
       }
@@ -2453,8 +2453,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Download Queued"
+            "state": "translated",
+            "value": "下载已排队"
           }
         }
       }
@@ -2469,8 +2469,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Download Release"
+            "state": "translated",
+            "value": "下载发布"
           }
         }
       }
@@ -2486,8 +2486,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Downloaded"
+            "state": "translated",
+            "value": "已下载"
           }
         }
       }
@@ -2503,8 +2503,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Downloading"
+            "state": "translated",
+            "value": "下载中"
           }
         }
       }
@@ -2520,8 +2520,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Dynamic Range"
+            "state": "translated",
+            "value": "动态范围"
           }
         }
       }
@@ -2537,8 +2537,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "e.g. %@"
+            "state": "translated",
+            "value": "例如 %@"
           }
         }
       }
@@ -2553,8 +2553,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Edit"
+            "state": "translated",
+            "value": "编辑"
           }
         }
       }
@@ -2569,8 +2569,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Email"
+            "state": "translated",
+            "value": "邮件"
           }
         }
       }
@@ -2585,8 +2585,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Enable Notifications"
+            "state": "translated",
+            "value": "启用通知"
           }
         }
       }
@@ -2602,8 +2602,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Ended"
+            "state": "translated",
+            "value": "已完结"
           }
         }
       }
@@ -2618,8 +2618,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Enter a valid URL."
+            "state": "translated",
+            "value": "请输入有效的 URL。"
           }
         }
       }
@@ -2634,8 +2634,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Enter an instance label."
+            "state": "translated",
+            "value": "请输入实例标签。"
           }
         }
       }
@@ -2650,8 +2650,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Episode"
+            "state": "translated",
+            "value": "集"
           }
         }
       }
@@ -2667,8 +2667,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Episode Deleted"
+            "state": "translated",
+            "value": "剧集已删除"
           }
         }
       }
@@ -2683,8 +2683,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Episode file was renamed."
+            "state": "translated",
+            "value": "剧集文件已重命名。"
           }
         }
       }
@@ -2700,8 +2700,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Episode Renamed"
+            "state": "translated",
+            "value": "剧集已重命名"
           }
         }
       }
@@ -2716,8 +2716,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Episode Search Queued"
+            "state": "translated",
+            "value": "剧集搜索已排队"
           }
         }
       }
@@ -2732,8 +2732,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Episodes"
+            "state": "translated",
+            "value": "集数"
           }
         }
       }
@@ -2749,8 +2749,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Error"
+            "state": "translated",
+            "value": "错误"
           }
         }
       }
@@ -2765,8 +2765,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Event Type"
+            "state": "translated",
+            "value": "事件类型"
           }
         }
       }
@@ -2782,8 +2782,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Everything"
+            "state": "translated",
+            "value": "全部"
           }
         }
       }
@@ -2799,8 +2799,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Existing Episodes"
+            "state": "translated",
+            "value": "现有剧集"
           }
         }
       }
@@ -2816,8 +2816,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Expired"
+            "state": "translated",
+            "value": "已过期"
           }
         }
       }
@@ -2833,8 +2833,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Failed"
+            "state": "translated",
+            "value": "失败"
           }
         }
       }
@@ -2849,8 +2849,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "File"
+            "state": "translated",
+            "value": "文件"
           }
         }
       }
@@ -2865,8 +2865,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "File Deleted"
+            "state": "translated",
+            "value": "文件已删除"
           }
         }
       }
@@ -2881,8 +2881,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "File Imported"
+            "state": "translated",
+            "value": "文件已导入"
           }
         }
       }
@@ -2898,8 +2898,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "File Size"
+            "state": "translated",
+            "value": "文件大小"
           }
         }
       }
@@ -2914,8 +2914,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "File Upgraded"
+            "state": "translated",
+            "value": "文件已升级"
           }
         }
       }
@@ -2930,8 +2930,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "File was deleted either manually or by a client through the API."
+            "state": "translated",
+            "value": "文件已被手动删除，或被客户端通过 API 删除。"
           }
         }
       }
@@ -2946,8 +2946,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "File was deleted to import an upgrade."
+            "state": "translated",
+            "value": "文件已被删除以导入升级版本。"
           }
         }
       }
@@ -2962,8 +2962,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "File was not found on disk so it was unlinked from the episode in the database."
+            "state": "translated",
+            "value": "磁盘上未找到文件，已从数据库中该剧集取消关联。"
           }
         }
       }
@@ -2978,8 +2978,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "File was not found on disk so it was unlinked from the movie in the database."
+            "state": "translated",
+            "value": "磁盘上未找到文件，已从数据库中该电影取消关联。"
           }
         }
       }
@@ -2994,8 +2994,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Files"
+            "state": "translated",
+            "value": "文件"
           }
         }
       }
@@ -3010,8 +3010,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Files & History"
+            "state": "translated",
+            "value": "文件与历史"
           }
         }
       }
@@ -3026,8 +3026,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Filter"
+            "state": "translated",
+            "value": "筛选"
           }
         }
       }
@@ -3043,8 +3043,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "First Season"
+            "state": "translated",
+            "value": "第一季"
           }
         }
       }
@@ -3060,8 +3060,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Fitness"
+            "state": "translated",
+            "value": "健身"
           }
         }
       }
@@ -3077,8 +3077,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Flags"
+            "state": "translated",
+            "value": "标志"
           }
         }
       }
@@ -3094,8 +3094,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Folder Imported"
+            "state": "translated",
+            "value": "文件夹已导入"
           }
         }
       }
@@ -3111,8 +3111,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Framerate"
+            "state": "translated",
+            "value": "帧率"
           }
         }
       }
@@ -3128,8 +3128,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "FreeLeech"
+            "state": "translated",
+            "value": "免费下载"
           }
         }
       }
@@ -3145,8 +3145,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Future Episodes"
+            "state": "translated",
+            "value": "未来剧集"
           }
         }
       }
@@ -3162,8 +3162,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Genre"
+            "state": "translated",
+            "value": "类型"
           }
         }
       }
@@ -3178,8 +3178,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Grab Release"
+            "state": "translated",
+            "value": "抓取发布"
           }
         }
       }
@@ -3195,8 +3195,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Grabbed"
+            "state": "translated",
+            "value": "已抓取"
           }
         }
       }
@@ -3211,8 +3211,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Grid"
+            "state": "translated",
+            "value": "网格"
           }
         }
       }
@@ -3227,8 +3227,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Header name"
+            "state": "translated",
+            "value": "Header 名称"
           }
         }
       }
@@ -3243,8 +3243,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Header value"
+            "state": "translated",
+            "value": "Header 值"
           }
         }
       }
@@ -3260,7 +3260,7 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
+            "state": "translated",
             "value": "Headers"
           }
         }
@@ -3276,8 +3276,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Health Issue"
+            "state": "translated",
+            "value": "健康问题"
           }
         }
       }
@@ -3292,8 +3292,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Health Restored"
+            "state": "translated",
+            "value": "健康已恢复"
           }
         }
       }
@@ -3308,8 +3308,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Hide Specials"
+            "state": "translated",
+            "value": "隐藏特辑"
           }
         }
       }
@@ -3325,8 +3325,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "History"
+            "state": "translated",
+            "value": "历史"
           }
         }
       }
@@ -3341,8 +3341,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Hold on, this may take a moment."
+            "state": "translated",
+            "value": "请稍候，这可能需要一点时间。"
           }
         }
       }
@@ -3358,8 +3358,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Home"
+            "state": "translated",
+            "value": "首页"
           }
         }
       }
@@ -3374,8 +3374,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Icons"
+            "state": "translated",
+            "value": "图标"
           }
         }
       }
@@ -3391,8 +3391,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Identifier"
+            "state": "translated",
+            "value": "标识符"
           }
         }
       }
@@ -3408,8 +3408,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Ignored"
+            "state": "translated",
+            "value": "已忽略"
           }
         }
       }
@@ -3425,8 +3425,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Import"
+            "state": "translated",
+            "value": "导入"
           }
         }
       }
@@ -3442,8 +3442,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Import Blocked"
+            "state": "translated",
+            "value": "导入被阻止"
           }
         }
       }
@@ -3458,8 +3458,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Import Completed"
+            "state": "translated",
+            "value": "导入完成"
           }
         }
       }
@@ -3475,8 +3475,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Import Pending"
+            "state": "translated",
+            "value": "待导入"
           }
         }
       }
@@ -3491,8 +3491,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Import Queued"
+            "state": "translated",
+            "value": "导入已排队"
           }
         }
       }
@@ -3508,8 +3508,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Imported"
+            "state": "translated",
+            "value": "已导入"
           }
         }
       }
@@ -3525,8 +3525,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Importing"
+            "state": "translated",
+            "value": "导入中"
           }
         }
       }
@@ -3542,8 +3542,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "In Cinemas"
+            "state": "translated",
+            "value": "影院上映"
           }
         }
       }
@@ -3559,8 +3559,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "In Queue"
+            "state": "translated",
+            "value": "队列中"
           }
         }
       }
@@ -3576,8 +3576,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Inactive"
+            "state": "translated",
+            "value": "未激活"
           }
         }
       }
@@ -3592,8 +3592,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Include Warnings"
+            "state": "translated",
+            "value": "包含警告"
           }
         }
       }
@@ -3609,8 +3609,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "indexer"
+            "state": "translated",
+            "value": "索引器"
           }
         }
       }
@@ -3625,8 +3625,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Indexer"
+            "state": "translated",
+            "value": "索引器"
           }
         }
       }
@@ -3641,8 +3641,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Information"
+            "state": "translated",
+            "value": "信息"
           }
         }
       }
@@ -3657,8 +3657,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Instance"
+            "state": "translated",
+            "value": "实例"
           }
         }
       }
@@ -3673,8 +3673,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Instance URL is not valid: %@"
+            "state": "translated",
+            "value": "实例 URL 无效：%@"
           }
         }
       }
@@ -3689,8 +3689,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Instances"
+            "state": "translated",
+            "value": "实例"
           }
         }
       }
@@ -3705,8 +3705,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Integrations"
+            "state": "translated",
+            "value": "集成"
           }
         }
       }
@@ -3721,8 +3721,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Interactive"
+            "state": "translated",
+            "value": "交互式"
           }
         }
       }
@@ -3738,8 +3738,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Interactive Search"
+            "state": "translated",
+            "value": "交互式搜索"
           }
         }
       }
@@ -3754,8 +3754,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Invalid Instance Label"
+            "state": "translated",
+            "value": "无效的实例标签"
           }
         }
       }
@@ -3770,8 +3770,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Invalid URL"
+            "state": "translated",
+            "value": "无效的 URL"
           }
         }
       }
@@ -3787,8 +3787,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Is this running on Windows?"
+            "state": "translated",
+            "value": "是否在 Windows 上运行？"
           }
         }
       }
@@ -3803,8 +3803,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Issues"
+            "state": "translated",
+            "value": "问题"
           }
         }
       }
@@ -3819,8 +3819,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Join the Discord"
+            "state": "translated",
+            "value": "加入 Discord"
           }
         }
       }
@@ -3835,8 +3835,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Just now"
+            "state": "translated",
+            "value": "刚刚"
           }
         }
       }
@@ -3852,8 +3852,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Just testing your patience."
+            "state": "translated",
+            "value": "只是在考验你的耐心。"
           }
         }
       }
@@ -3869,8 +3869,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Label"
+            "state": "translated",
+            "value": "标签"
           }
         }
       }
@@ -3885,8 +3885,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Language"
+            "state": "translated",
+            "value": "语言"
           }
         }
       }
@@ -3902,8 +3902,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Languages"
+            "state": "translated",
+            "value": "语言"
           }
         }
       }
@@ -3919,8 +3919,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Last Season"
+            "state": "translated",
+            "value": "最后一季"
           }
         }
       }
@@ -3936,8 +3936,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Latest"
+            "state": "translated",
+            "value": "最新"
           }
         }
       }
@@ -3952,8 +3952,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Leave a Review"
+            "state": "translated",
+            "value": "留下评价"
           }
         }
       }
@@ -3969,8 +3969,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Let's hope it's worth the wait."
+            "state": "translated",
+            "value": "希望等待是值得的。"
           }
         }
       }
@@ -3986,8 +3986,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Light"
+            "state": "translated",
+            "value": "浅色"
           }
         }
       }
@@ -4002,8 +4002,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Link"
+            "state": "translated",
+            "value": "链接"
           }
         }
       }
@@ -4018,8 +4018,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Link Copied"
+            "state": "translated",
+            "value": "链接已复制"
           }
         }
       }
@@ -4034,8 +4034,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Load More"
+            "state": "translated",
+            "value": "加载更多"
           }
         }
       }
@@ -4050,8 +4050,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Loading..."
+            "state": "translated",
+            "value": "加载中..."
           }
         }
       }
@@ -4066,8 +4066,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Local Network Access Denied"
+            "state": "translated",
+            "value": "本地网络访问被拒绝"
           }
         }
       }
@@ -4082,8 +4082,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Local network access must be granted in %@ to connect to instances using private IP addresses."
+            "state": "translated",
+            "value": "必须在 %@ 中授予本地网络访问权限，才能通过私有 IP 地址连接实例。"
           }
         }
       }
@@ -4098,8 +4098,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Local network access must be granted in System Settings to connect to instances on private IP addresses."
+            "state": "translated",
+            "value": "必须在「系统设置」中授予本地网络访问权限，才能连接使用私有 IP 地址的实例。"
           }
         }
       }
@@ -4114,8 +4114,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Long-press any file to delete it."
+            "state": "translated",
+            "value": "长按文件即可删除。"
           }
         }
       }
@@ -4130,8 +4130,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Looking to [add a new movie](%@)?"
+            "state": "translated",
+            "value": "想要[添加新电影](%@)？"
           }
         }
       }
@@ -4146,8 +4146,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Looking to [add a new series](%@)?"
+            "state": "translated",
+            "value": "想要[添加新剧集](%@)？"
           }
         }
       }
@@ -4163,8 +4163,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Mail"
+            "state": "translated",
+            "value": "邮件"
           }
         }
       }
@@ -4179,8 +4179,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Manual Import"
+            "state": "translated",
+            "value": "手动导入"
           }
         }
       }
@@ -4195,8 +4195,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Manual Interaction Required"
+            "state": "translated",
+            "value": "需要手动操作"
           }
         }
       }
@@ -4212,8 +4212,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Match Type"
+            "state": "translated",
+            "value": "匹配类型"
           }
         }
       }
@@ -4228,8 +4228,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Media Type"
+            "state": "translated",
+            "value": "媒体类型"
           }
         }
       }
@@ -4245,8 +4245,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Metadata"
+            "state": "translated",
+            "value": "元数据"
           }
         }
       }
@@ -4261,8 +4261,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Midseason Finale"
+            "state": "translated",
+            "value": "季中结局"
           }
         }
       }
@@ -4278,8 +4278,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Min. Availability"
+            "state": "translated",
+            "value": "最低可用性"
           }
         }
       }
@@ -4294,8 +4294,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Minimum Availability"
+            "state": "translated",
+            "value": "最低可用性"
           }
         }
       }
@@ -4311,8 +4311,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Missing"
+            "state": "translated",
+            "value": "缺失"
           }
         }
       }
@@ -4328,8 +4328,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Missing Episodes"
+            "state": "translated",
+            "value": "缺失的剧集"
           }
         }
       }
@@ -4345,8 +4345,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Monitor"
+            "state": "translated",
+            "value": "监控"
           }
         }
       }
@@ -4361,8 +4361,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Monitor New Seasons"
+            "state": "translated",
+            "value": "监控新季"
           }
         }
       }
@@ -4378,8 +4378,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Monitor Specials"
+            "state": "translated",
+            "value": "监控特辑"
           }
         }
       }
@@ -4395,8 +4395,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Monitored"
+            "state": "translated",
+            "value": "已监控"
           }
         }
       }
@@ -4411,8 +4411,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Monitored Search Queued"
+            "state": "translated",
+            "value": "已监控搜索已排队"
           }
         }
       }
@@ -4428,8 +4428,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Monochrome"
+            "state": "translated",
+            "value": "单色"
           }
         }
       }
@@ -4444,8 +4444,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Move Files"
+            "state": "translated",
+            "value": "移动文件"
           }
         }
       }
@@ -4460,8 +4460,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Move the movie files to \"%@\"?"
+            "state": "translated",
+            "value": "将电影文件移动到「%@」？"
           }
         }
       }
@@ -4476,8 +4476,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Move the series files to \"%@\"?"
+            "state": "translated",
+            "value": "将剧集文件移动到「%@」？"
           }
         }
       }
@@ -4492,8 +4492,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie"
+            "state": "translated",
+            "value": "电影"
           }
         }
       }
@@ -4508,8 +4508,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie + Collection"
+            "state": "translated",
+            "value": "电影 + 合集"
           }
         }
       }
@@ -4524,8 +4524,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Added"
+            "state": "translated",
+            "value": "电影已添加"
           }
         }
       }
@@ -4541,8 +4541,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Deleted"
+            "state": "translated",
+            "value": "电影已删除"
           }
         }
       }
@@ -4557,8 +4557,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Downloading"
+            "state": "translated",
+            "value": "电影下载中"
           }
         }
       }
@@ -4573,8 +4573,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie File Deleted"
+            "state": "translated",
+            "value": "电影文件已删除"
           }
         }
       }
@@ -4589,8 +4589,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie file was renamed."
+            "state": "translated",
+            "value": "电影文件已重命名。"
           }
         }
       }
@@ -4605,8 +4605,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie has no files."
+            "state": "translated",
+            "value": "该电影没有文件。"
           }
         }
       }
@@ -4621,8 +4621,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie has no history."
+            "state": "translated",
+            "value": "该电影没有历史记录。"
           }
         }
       }
@@ -4637,8 +4637,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Imported"
+            "state": "translated",
+            "value": "电影已导入"
           }
         }
       }
@@ -4653,8 +4653,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie imported from folder."
+            "state": "translated",
+            "value": "电影已从文件夹导入。"
           }
         }
       }
@@ -4670,8 +4670,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Renamed"
+            "state": "translated",
+            "value": "电影已重命名"
           }
         }
       }
@@ -4686,8 +4686,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Search Queued"
+            "state": "translated",
+            "value": "电影搜索已排队"
           }
         }
       }
@@ -4702,8 +4702,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Upgraded"
+            "state": "translated",
+            "value": "电影已升级"
           }
         }
       }
@@ -4719,8 +4719,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movies"
+            "state": "translated",
+            "value": "电影"
           }
         }
       }
@@ -4735,8 +4735,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Multi-Episode"
+            "state": "translated",
+            "value": "多集"
           }
         }
       }
@@ -4751,8 +4751,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Multilingual"
+            "state": "translated",
+            "value": "多语言"
           }
         }
       }
@@ -4768,8 +4768,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Music"
+            "state": "translated",
+            "value": "音乐"
           }
         }
       }
@@ -4785,8 +4785,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Network"
+            "state": "translated",
+            "value": "网络"
           }
         }
       }
@@ -4801,8 +4801,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "New Seasons"
+            "state": "translated",
+            "value": "新季"
           }
         }
       }
@@ -4817,8 +4817,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Next Airing"
+            "state": "translated",
+            "value": "下次播出"
           }
         }
       }
@@ -4833,8 +4833,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No"
+            "state": "translated",
+            "value": "否"
           }
         }
       }
@@ -4849,8 +4849,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No %@ Instance"
+            "state": "translated",
+            "value": "没有 %@ 实例"
           }
         }
       }
@@ -4865,8 +4865,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No Automatic Search"
+            "state": "translated",
+            "value": "无自动搜索"
           }
         }
       }
@@ -4881,8 +4881,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No Events"
+            "state": "translated",
+            "value": "无事件"
           }
         }
       }
@@ -4897,8 +4897,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No Events Match"
+            "state": "translated",
+            "value": "无匹配事件"
           }
         }
       }
@@ -4913,8 +4913,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No events match the selected filters."
+            "state": "translated",
+            "value": "没有匹配所选筛选条件的事件。"
           }
         }
       }
@@ -4929,8 +4929,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No importable files found."
+            "state": "translated",
+            "value": "未找到可导入的文件。"
           }
         }
       }
@@ -4945,8 +4945,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No Instance"
+            "state": "translated",
+            "value": "无实例"
           }
         }
       }
@@ -4961,8 +4961,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No Internet Connection"
+            "state": "translated",
+            "value": "无网络连接"
           }
         }
       }
@@ -4977,8 +4977,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No Movies Match"
+            "state": "translated",
+            "value": "无匹配电影"
           }
         }
       }
@@ -4993,8 +4993,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No movies match the selected filters."
+            "state": "translated",
+            "value": "没有匹配所选筛选条件的电影。"
           }
         }
       }
@@ -5009,8 +5009,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No Releases Found"
+            "state": "translated",
+            "value": "未找到发布"
           }
         }
       }
@@ -5025,8 +5025,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No releases found for \"%@\"."
+            "state": "translated",
+            "value": "未找到「%@」的发布。"
           }
         }
       }
@@ -5041,8 +5041,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No Releases Match"
+            "state": "translated",
+            "value": "无匹配发布"
           }
         }
       }
@@ -5057,8 +5057,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No releases match \"%@\"."
+            "state": "translated",
+            "value": "没有匹配「%@」的发布。"
           }
         }
       }
@@ -5073,8 +5073,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No releases match the selected filters and \"%@\"."
+            "state": "translated",
+            "value": "没有匹配所选过滤器和「%@」的发布。"
           }
         }
       }
@@ -5089,8 +5089,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No releases match the selected filters."
+            "state": "translated",
+            "value": "没有匹配所选筛选条件的发布。"
           }
         }
       }
@@ -5105,8 +5105,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No Results for \"%@\""
+            "state": "translated",
+            "value": "未找到「%@」的结果"
           }
         }
       }
@@ -5122,8 +5122,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No Series Match"
+            "state": "translated",
+            "value": "无匹配剧集"
           }
         }
       }
@@ -5138,8 +5138,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "No series match the selected filters."
+            "state": "translated",
+            "value": "没有匹配所选筛选条件的剧集。"
           }
         }
       }
@@ -5155,8 +5155,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "None"
+            "state": "translated",
+            "value": "无"
           }
         }
       }
@@ -5172,8 +5172,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Not Subscribed"
+            "state": "translated",
+            "value": "未订阅"
           }
         }
       }
@@ -5189,8 +5189,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Notes"
+            "state": "translated",
+            "value": "备注"
           }
         }
       }
@@ -5205,8 +5205,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Notification settings for each instance are shared between devices. To disable notifications for a specific device go to %@."
+            "state": "translated",
+            "value": "每个实例的通知设置会在设备间共享。如需在特定设备上禁用通知，请前往 %@。"
           }
         }
       }
@@ -5223,8 +5223,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ Updated"
+            "state": "translated",
+            "value": "%@ 已更新"
           }
         }
       }
@@ -5241,8 +5241,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Episode Downgraded on %@"
+            "state": "translated",
+            "value": "剧集在 %@ 上已降级"
           }
         }
       }
@@ -5259,8 +5259,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Downgraded from %1$@ to %2$@"
+            "state": "translated",
+            "value": "从 %1$@ 降级至 %2$@"
           }
         }
       }
@@ -5277,8 +5277,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Episode Downloaded on %@"
+            "state": "translated",
+            "value": "剧集在 %@ 上已下载"
           }
         }
       }
@@ -5295,8 +5295,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (S%@ E%@)"
+            "state": "translated",
+            "value": "%@（S%@ E%@）"
           }
         }
       }
@@ -5313,8 +5313,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Episode File Deleted on %@"
+            "state": "translated",
+            "value": "剧集文件在 %@ 上已删除"
           }
         }
       }
@@ -5331,8 +5331,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (S%@ E%@)"
+            "state": "translated",
+            "value": "%@（S%@ E%@）"
           }
         }
       }
@@ -5349,8 +5349,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Episode Downloading on %@"
+            "state": "translated",
+            "value": "剧集在 %@ 上下载中"
           }
         }
       }
@@ -5367,8 +5367,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (S%@ E%@)"
+            "state": "translated",
+            "value": "%@（S%@ E%@）"
           }
         }
       }
@@ -5385,8 +5385,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Episode Upgraded on %@"
+            "state": "translated",
+            "value": "剧集在 %@ 上已升级"
           }
         }
       }
@@ -5403,8 +5403,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Upgraded from %1$@ to %2$@"
+            "state": "translated",
+            "value": "从 %1$@ 升级至 %2$@"
           }
         }
       }
@@ -5421,8 +5421,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (S%@ E%@)"
+            "state": "translated",
+            "value": "%@（S%@ E%@）"
           }
         }
       }
@@ -5439,8 +5439,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%2$@ Episodes Downloaded on %1$@"
+            "state": "translated",
+            "value": "%2$@ 集已在 %1$@ 上下载"
           }
         }
       }
@@ -5457,8 +5457,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (Season %@)"
+            "state": "translated",
+            "value": "%@（第 %@ 季）"
           }
         }
       }
@@ -5475,8 +5475,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%2$@ Episodes Downloading on %1$@"
+            "state": "translated",
+            "value": "%2$@ 集正在 %1$@ 上下载"
           }
         }
       }
@@ -5493,8 +5493,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Downloading %@ from %@"
+            "state": "translated",
+            "value": "正在从 %2$@ 下载 %1$@"
           }
         }
       }
@@ -5511,8 +5511,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (Season %@)"
+            "state": "translated",
+            "value": "%@（第 %@ 季）"
           }
         }
       }
@@ -5529,8 +5529,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Health Issue on %@"
+            "state": "translated",
+            "value": "%@ 出现健康问题"
           }
         }
       }
@@ -5547,8 +5547,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Health Issue Resolved on %@"
+            "state": "translated",
+            "value": "%@ 健康问题已解决"
           }
         }
       }
@@ -5565,8 +5565,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Manual Interaction Required on %@"
+            "state": "translated",
+            "value": "%@ 需要手动操作"
           }
         }
       }
@@ -5583,8 +5583,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Added on %@"
+            "state": "translated",
+            "value": "电影在 %@ 上已添加"
           }
         }
       }
@@ -5601,8 +5601,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (%@)"
+            "state": "translated",
+            "value": "%@（%@）"
           }
         }
       }
@@ -5619,8 +5619,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Deleted on %@"
+            "state": "translated",
+            "value": "电影在 %@ 上已删除"
           }
         }
       }
@@ -5637,8 +5637,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (%@)"
+            "state": "translated",
+            "value": "%@（%@）"
           }
         }
       }
@@ -5655,8 +5655,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Downgraded on %@"
+            "state": "translated",
+            "value": "电影在 %@ 上已降级"
           }
         }
       }
@@ -5673,8 +5673,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Downgraded from %1$@ to %2$@"
+            "state": "translated",
+            "value": "从 %1$@ 降级至 %2$@"
           }
         }
       }
@@ -5691,8 +5691,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Downloaded on %@"
+            "state": "translated",
+            "value": "电影在 %@ 上已下载"
           }
         }
       }
@@ -5709,8 +5709,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (%@)"
+            "state": "translated",
+            "value": "%@（%@）"
           }
         }
       }
@@ -5727,8 +5727,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie File Deleted on %@"
+            "state": "translated",
+            "value": "电影文件在 %@ 上已删除"
           }
         }
       }
@@ -5745,8 +5745,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (%@)"
+            "state": "translated",
+            "value": "%@（%@）"
           }
         }
       }
@@ -5763,8 +5763,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Downloading on %@"
+            "state": "translated",
+            "value": "电影在 %@ 上下载中"
           }
         }
       }
@@ -5781,8 +5781,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Downloading %@ from %@"
+            "state": "translated",
+            "value": "正在从 %2$@ 下载 %1$@"
           }
         }
       }
@@ -5799,8 +5799,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (%@)"
+            "state": "translated",
+            "value": "%@（%@）"
           }
         }
       }
@@ -5817,8 +5817,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Movie Upgraded on %@"
+            "state": "translated",
+            "value": "电影在 %@ 上已升级"
           }
         }
       }
@@ -5835,8 +5835,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Upgraded from %1$@ to %2$@"
+            "state": "translated",
+            "value": "从 %1$@ 升级至 %2$@"
           }
         }
       }
@@ -5853,8 +5853,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (%@)"
+            "state": "translated",
+            "value": "%@（%@）"
           }
         }
       }
@@ -5871,8 +5871,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Series Added on %@"
+            "state": "translated",
+            "value": "剧集在 %@ 上已添加"
           }
         }
       }
@@ -5889,8 +5889,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (%@)"
+            "state": "translated",
+            "value": "%@（%@）"
           }
         }
       }
@@ -5907,8 +5907,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Series Deleted on %@"
+            "state": "translated",
+            "value": "剧集在 %@ 上已删除"
           }
         }
       }
@@ -5925,8 +5925,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "%@ (%@)"
+            "state": "translated",
+            "value": "%@（%@）"
           }
         }
       }
@@ -5942,8 +5942,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Test Notification"
+            "state": "translated",
+            "value": "测试通知"
           }
         }
       }
@@ -5959,8 +5959,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "This is a test notification."
+            "state": "translated",
+            "value": "这是一条测试通知。"
           }
         }
       }
@@ -5975,8 +5975,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Notifications"
+            "state": "translated",
+            "value": "通知"
           }
         }
       }
@@ -5991,8 +5991,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Notifications are disabled, please enable them in %@."
+            "state": "translated",
+            "value": "通知已禁用，请在 %@ 中启用。"
           }
         }
       }
@@ -6007,8 +6007,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Notifications require a subscription to %@."
+            "state": "translated",
+            "value": "通知功能需要订阅 %@。"
           }
         }
       }
@@ -6024,8 +6024,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Notifications require an Apple Account. Please sign in, or enable iCloud Drive in the iCloud settings (%1$@)."
+            "state": "translated",
+            "value": "通知功能需要 Apple 账户。请登录，或在 iCloud 设置中启用 iCloud 云盘（%1$@）。"
           }
         }
       }
@@ -6040,8 +6040,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Notifications will not route reliably until each instance has been given a unique \"Instance Name\" in the web interface under \"Settings > General\"."
+            "state": "translated",
+            "value": "除非每个实例在 Web 界面的「设置 > 通用」中被赋予唯一的「实例名称」，否则通知可能无法可靠路由。"
           }
         }
       }
@@ -6056,8 +6056,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "OK"
+            "state": "translated",
+            "value": "确定"
           }
         }
       }
@@ -6072,8 +6072,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Open"
+            "state": "translated",
+            "value": "打开"
           }
         }
       }
@@ -6089,8 +6089,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Open %@"
+            "state": "translated",
+            "value": "打开 %@"
           }
         }
       }
@@ -6105,8 +6105,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Open ${target}"
+            "state": "translated",
+            "value": "打开 ${target}"
           }
         }
       }
@@ -6121,8 +6121,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Open in %@"
+            "state": "translated",
+            "value": "在 %@ 中打开"
           }
         }
       }
@@ -6137,8 +6137,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Open In..."
+            "state": "translated",
+            "value": "打开方式..."
           }
         }
       }
@@ -6153,8 +6153,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Open Ruddarr"
+            "state": "translated",
+            "value": "打开 Ruddarr"
           }
         }
       }
@@ -6169,8 +6169,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Open Website"
+            "state": "translated",
+            "value": "打开网站"
           }
         }
       }
@@ -6185,8 +6185,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Optimizes API calls for instances that load unusually slowly and encounter timeouts frequently."
+            "state": "translated",
+            "value": "针对加载异常缓慢且频繁超时的实例优化 API 调用。"
           }
         }
       }
@@ -6202,8 +6202,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Original"
+            "state": "translated",
+            "value": "原始"
           }
         }
       }
@@ -6219,8 +6219,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Other"
+            "state": "translated",
+            "value": "其他"
           }
         }
       }
@@ -6235,8 +6235,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Password"
+            "state": "translated",
+            "value": "密码"
           }
         }
       }
@@ -6252,8 +6252,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Paste"
+            "state": "translated",
+            "value": "粘贴"
           }
         }
       }
@@ -6269,8 +6269,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Paused"
+            "state": "translated",
+            "value": "已暂停"
           }
         }
       }
@@ -6285,8 +6285,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Peers"
+            "state": "translated",
+            "value": "用户数"
           }
         }
       }
@@ -6302,8 +6302,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Pending"
+            "state": "translated",
+            "value": "待处理"
           }
         }
       }
@@ -6318,8 +6318,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Permanently erase the folder and its contents."
+            "state": "translated",
+            "value": "永久删除该文件夹及其内容。"
           }
         }
       }
@@ -6334,8 +6334,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Physical Release"
+            "state": "translated",
+            "value": "实体发布"
           }
         }
       }
@@ -6351,8 +6351,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Pilot Episode"
+            "state": "translated",
+            "value": "试播集"
           }
         }
       }
@@ -6367,8 +6367,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Please check your internet connection and try again."
+            "state": "translated",
+            "value": "请检查网络连接后重试。"
           }
         }
       }
@@ -6384,8 +6384,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Podcasts"
+            "state": "translated",
+            "value": "播客"
           }
         }
       }
@@ -6400,8 +6400,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Popular This Week"
+            "state": "translated",
+            "value": "本周热门"
           }
         }
       }
@@ -6417,8 +6417,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Posters"
+            "state": "translated",
+            "value": "海报"
           }
         }
       }
@@ -6433,8 +6433,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Preferences"
+            "state": "translated",
+            "value": "偏好设置"
           }
         }
       }
@@ -6449,8 +6449,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Preferred language and other app-related settings can be configured in the [System Settings](#link)."
+            "state": "translated",
+            "value": "首选语言和其他应用相关设置可在[系统设置](#link)中配置。"
           }
         }
       }
@@ -6465,8 +6465,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Premieres"
+            "state": "translated",
+            "value": "首播"
           }
         }
       }
@@ -6482,8 +6482,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Preserve"
+            "state": "translated",
+            "value": "保留"
           }
         }
       }
@@ -6498,8 +6498,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Prevent from being readded to library by lists."
+            "state": "translated",
+            "value": "防止通过列表重新添加到库中。"
           }
         }
       }
@@ -6514,8 +6514,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Previous Airing"
+            "state": "translated",
+            "value": "上次播出"
           }
         }
       }
@@ -6531,7 +6531,7 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
+            "state": "translated",
             "value": "Proper"
           }
         }
@@ -6547,8 +6547,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Protocol"
+            "state": "translated",
+            "value": "协议"
           }
         }
       }
@@ -6563,8 +6563,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Provide a detailed description of the issue along with the exact steps to reproduce it."
+            "state": "translated",
+            "value": "请详细描述问题，并提供复现步骤。"
           }
         }
       }
@@ -6580,8 +6580,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Published"
+            "state": "translated",
+            "value": "已发布"
           }
         }
       }
@@ -6597,8 +6597,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Quality"
+            "state": "translated",
+            "value": "质量"
           }
         }
       }
@@ -6613,8 +6613,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Quality Profile"
+            "state": "translated",
+            "value": "质量配置"
           }
         }
       }
@@ -6630,8 +6630,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Queued"
+            "state": "translated",
+            "value": "已排队"
           }
         }
       }
@@ -6646,8 +6646,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Queues Empty"
+            "state": "translated",
+            "value": "队列为空"
           }
         }
       }
@@ -6663,8 +6663,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Rating"
+            "state": "translated",
+            "value": "评分"
           }
         }
       }
@@ -6680,8 +6680,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Recent Episodes"
+            "state": "translated",
+            "value": "最近剧集"
           }
         }
       }
@@ -6696,8 +6696,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Refresh"
+            "state": "translated",
+            "value": "刷新"
           }
         }
       }
@@ -6712,8 +6712,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Refresh Queued"
+            "state": "translated",
+            "value": "刷新已排队"
           }
         }
       }
@@ -6728,8 +6728,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Release Downloading"
+            "state": "translated",
+            "value": "发布下载中"
           }
         }
       }
@@ -6744,8 +6744,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Release Filters"
+            "state": "translated",
+            "value": "发布筛选"
           }
         }
       }
@@ -6761,8 +6761,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Release Grabbed"
+            "state": "translated",
+            "value": "发布已抓取"
           }
         }
       }
@@ -6777,8 +6777,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Release Group"
+            "state": "translated",
+            "value": "发布组"
           }
         }
       }
@@ -6794,8 +6794,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Release Notes"
+            "state": "translated",
+            "value": "更新日志"
           }
         }
       }
@@ -6811,8 +6811,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Release Push"
+            "state": "translated",
+            "value": "发布推送"
           }
         }
       }
@@ -6827,8 +6827,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Release Rejected"
+            "state": "translated",
+            "value": "发布已拒绝"
           }
         }
       }
@@ -6843,8 +6843,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Release Type"
+            "state": "translated",
+            "value": "发布类型"
           }
         }
       }
@@ -6860,8 +6860,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Released"
+            "state": "translated",
+            "value": "已发布"
           }
         }
       }
@@ -6877,8 +6877,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Relevant"
+            "state": "translated",
+            "value": "相关"
           }
         }
       }
@@ -6894,8 +6894,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Remove"
+            "state": "translated",
+            "value": "移除"
           }
         }
       }
@@ -6910,8 +6910,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Remove from Client"
+            "state": "translated",
+            "value": "从客户端移除"
           }
         }
       }
@@ -6926,8 +6926,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Remove Task"
+            "state": "translated",
+            "value": "移除任务"
           }
         }
       }
@@ -6943,8 +6943,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Renamed"
+            "state": "translated",
+            "value": "已重命名"
           }
         }
       }
@@ -6960,8 +6960,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Repack"
+            "state": "translated",
+            "value": "重新打包"
           }
         }
       }
@@ -6976,8 +6976,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Report an Issue"
+            "state": "translated",
+            "value": "报告问题"
           }
         }
       }
@@ -6993,8 +6993,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Reset"
+            "state": "translated",
+            "value": "重置"
           }
         }
       }
@@ -7009,8 +7009,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Reset All Settings"
+            "state": "translated",
+            "value": "重置所有设置"
           }
         }
       }
@@ -7026,8 +7026,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Resolution"
+            "state": "translated",
+            "value": "分辨率"
           }
         }
       }
@@ -7042,8 +7042,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Response Decoding Error"
+            "state": "translated",
+            "value": "响应解码错误"
           }
         }
       }
@@ -7058,8 +7058,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Retry"
+            "state": "translated",
+            "value": "重试"
           }
         }
       }
@@ -7075,8 +7075,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Revoked"
+            "state": "translated",
+            "value": "已撤销"
           }
         }
       }
@@ -7091,8 +7091,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Root Folder"
+            "state": "translated",
+            "value": "根文件夹"
           }
         }
       }
@@ -7108,8 +7108,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Runtime"
+            "state": "translated",
+            "value": "时长"
           }
         }
       }
@@ -7124,8 +7124,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Save"
+            "state": "translated",
+            "value": "保存"
           }
         }
       }
@@ -7141,8 +7141,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Scan Type"
+            "state": "translated",
+            "value": "扫描类型"
           }
         }
       }
@@ -7158,8 +7158,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Score"
+            "state": "translated",
+            "value": "评分"
           }
         }
       }
@@ -7175,8 +7175,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Search"
+            "state": "translated",
+            "value": "搜索"
           }
         }
       }
@@ -7191,8 +7191,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Search for Movie"
+            "state": "translated",
+            "value": "搜索电影"
           }
         }
       }
@@ -7207,8 +7207,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Search for movie with ${name}"
+            "state": "translated",
+            "value": "搜索电影：${name}"
           }
         }
       }
@@ -7223,8 +7223,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Search for Replacement"
+            "state": "translated",
+            "value": "搜索替代"
           }
         }
       }
@@ -7239,8 +7239,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Search for TV Series"
+            "state": "translated",
+            "value": "搜索电视剧"
           }
         }
       }
@@ -7255,8 +7255,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Search for TV series with ${name}"
+            "state": "translated",
+            "value": "搜索电视剧：${name}"
           }
         }
       }
@@ -7271,8 +7271,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Search Monitored"
+            "state": "translated",
+            "value": "搜索已监控"
           }
         }
       }
@@ -7287,8 +7287,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Searching..."
+            "state": "translated",
+            "value": "搜索中..."
           }
         }
       }
@@ -7318,14 +7318,14 @@
             "plural": {
               "one": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "Season %lld"
+                  "state": "translated",
+                  "value": "第 %lld 季"
                 }
               },
               "other": {
                 "stringUnit": {
-                  "state": "needs_review",
-                  "value": "Season %lld"
+                  "state": "translated",
+                  "value": "第 %lld 季"
                 }
               }
             }
@@ -7343,8 +7343,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Season Files Deleted"
+            "state": "translated",
+            "value": "季文件已删除"
           }
         }
       }
@@ -7359,8 +7359,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Season Finale"
+            "state": "translated",
+            "value": "季终"
           }
         }
       }
@@ -7375,8 +7375,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Season Folders"
+            "state": "translated",
+            "value": "季文件夹"
           }
         }
       }
@@ -7391,8 +7391,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Season Pack"
+            "state": "translated",
+            "value": "季合集"
           }
         }
       }
@@ -7407,8 +7407,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Season Premiere"
+            "state": "translated",
+            "value": "季首播"
           }
         }
       }
@@ -7423,8 +7423,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Season Search Queued"
+            "state": "translated",
+            "value": "季搜索已排队"
           }
         }
       }
@@ -7439,8 +7439,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Seasons"
+            "state": "translated",
+            "value": "季"
           }
         }
       }
@@ -7456,8 +7456,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Seeders"
+            "state": "translated",
+            "value": "做种数"
           }
         }
       }
@@ -7472,8 +7472,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Sending push notifications to devices requires reliable server infrastructure, which incurs monthly operating expenses for this free, open-source project."
+            "state": "translated",
+            "value": "向设备发送推送通知需要可靠的服务器基础设施，这给这个免费的开源项目带来了每月的运营成本。"
           }
         }
       }
@@ -7489,8 +7489,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Series"
+            "state": "translated",
+            "value": "剧集"
           }
         }
       }
@@ -7505,8 +7505,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Series Added"
+            "state": "translated",
+            "value": "剧集已添加"
           }
         }
       }
@@ -7521,8 +7521,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Series Deleted"
+            "state": "translated",
+            "value": "剧集已删除"
           }
         }
       }
@@ -7537,8 +7537,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Series Finale"
+            "state": "translated",
+            "value": "全剧终"
           }
         }
       }
@@ -7553,8 +7553,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Series imported from folder."
+            "state": "translated",
+            "value": "剧集已从文件夹导入。"
           }
         }
       }
@@ -7569,8 +7569,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Series Not Monitored"
+            "state": "translated",
+            "value": "剧集未监控"
           }
         }
       }
@@ -7585,8 +7585,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Series Premiere"
+            "state": "translated",
+            "value": "首播集"
           }
         }
       }
@@ -7601,8 +7601,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Series Type"
+            "state": "translated",
+            "value": "剧集类型"
           }
         }
       }
@@ -7617,8 +7617,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Server Error Response"
+            "state": "translated",
+            "value": "服务器错误响应"
           }
         }
       }
@@ -7633,8 +7633,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Server returned %lld status code."
+            "state": "translated",
+            "value": "服务器返回了 %lld 状态码。"
           }
         }
       }
@@ -7650,8 +7650,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Settings"
+            "state": "translated",
+            "value": "设置"
           }
         }
       }
@@ -7666,8 +7666,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Share App"
+            "state": "translated",
+            "value": "分享 App"
           }
         }
       }
@@ -7682,8 +7682,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Show Advanced Settings"
+            "state": "translated",
+            "value": "显示高级设置"
           }
         }
       }
@@ -7698,8 +7698,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Single Episode"
+            "state": "translated",
+            "value": "单集"
           }
         }
       }
@@ -7714,8 +7714,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Slow Instance"
+            "state": "translated",
+            "value": "慢速实例"
           }
         }
       }
@@ -7730,8 +7730,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Some releases are hidden by the selected filters."
+            "state": "translated",
+            "value": "部分发布被所选筛选条件隐藏。"
           }
         }
       }
@@ -7746,8 +7746,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Something Went Wrong"
+            "state": "translated",
+            "value": "出了点问题"
           }
         }
       }
@@ -7762,8 +7762,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Sort By"
+            "state": "translated",
+            "value": "排序方式"
           }
         }
       }
@@ -7779,8 +7779,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Source"
+            "state": "translated",
+            "value": "来源"
           }
         }
       }
@@ -7795,8 +7795,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Special"
+            "state": "translated",
+            "value": "特辑"
           }
         }
       }
@@ -7811,8 +7811,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Specials"
+            "state": "translated",
+            "value": "特辑"
           }
         }
       }
@@ -7828,8 +7828,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Standard"
+            "state": "translated",
+            "value": "标准"
           }
         }
       }
@@ -7844,8 +7844,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Status"
+            "state": "translated",
+            "value": "状态"
           }
         }
       }
@@ -7860,8 +7860,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Still searching for releases."
+            "state": "translated",
+            "value": "仍在搜索发布。"
           }
         }
       }
@@ -7877,8 +7877,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Streams"
+            "state": "translated",
+            "value": "流"
           }
         }
       }
@@ -7894,8 +7894,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Studio"
+            "state": "translated",
+            "value": "工作室"
           }
         }
       }
@@ -7911,8 +7911,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Submit"
+            "state": "translated",
+            "value": "提交"
           }
         }
       }
@@ -7927,8 +7927,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Subscription"
+            "state": "translated",
+            "value": "订阅"
           }
         }
       }
@@ -7943,8 +7943,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Subscription unlocks instance notifications, alternate app icons and supports the continued indie development of %@."
+            "state": "translated",
+            "value": "订阅可解锁实例通知、备用应用图标，并支持 %@ 的持续独立开发。"
           }
         }
       }
@@ -7960,8 +7960,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Subtitles"
+            "state": "translated",
+            "value": "字幕"
           }
         }
       }
@@ -7977,8 +7977,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "System"
+            "state": "translated",
+            "value": "系统"
           }
         }
       }
@@ -7994,8 +7994,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "System Settings"
+            "state": "translated",
+            "value": "系统设置"
           }
         }
       }
@@ -8011,8 +8011,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "System Settings > Notifications > %@"
+            "state": "translated",
+            "value": "系统设置 > 通知 > %@"
           }
         }
       }
@@ -8028,8 +8028,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "System Settings > Privacy & Security > Local Network"
+            "state": "translated",
+            "value": "系统设置 > 隐私与安全性 > 本地网络"
           }
         }
       }
@@ -8044,8 +8044,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Tab"
+            "state": "translated",
+            "value": "标签页"
           }
         }
       }
@@ -8060,8 +8060,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Tags"
+            "state": "translated",
+            "value": "标签"
           }
         }
       }
@@ -8077,8 +8077,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "TBA"
+            "state": "translated",
+            "value": "待定"
           }
         }
       }
@@ -8093,8 +8093,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "TestFlight for macOS"
+            "state": "translated",
+            "value": "macOS 版 TestFlight"
           }
         }
       }
@@ -8109,8 +8109,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "The API Key can be found in the web interface under \"Settings > General > Security\"."
+            "state": "translated",
+            "value": "API 密钥可在 Web 界面的「设置 > 通用 > 安全」中找到。"
           }
         }
       }
@@ -8125,8 +8125,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "The credentials will be encoded and added as an \"Authorization\" header."
+            "state": "translated",
+            "value": "凭据将被编码并添加为「Authorization」Header。"
           }
         }
       }
@@ -8141,8 +8141,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "The release for this movie could not be determined and it may not import automatically. Do you want to grab \"%@\"?"
+            "state": "translated",
+            "value": "无法确定该电影的发布版本，可能无法自动导入。是否要抓取「%@」？"
           }
         }
       }
@@ -8157,8 +8157,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "The release for this series/episode could not be determined and it may not import automatically. Do you want to grab \"%@\"?"
+            "state": "translated",
+            "value": "无法确定该剧集/集数的发布版本，可能无法自动导入。是否要抓取「%@」？"
           }
         }
       }
@@ -8173,8 +8173,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "The URL used to access the %@ web interface."
+            "state": "translated",
+            "value": "用于访问 %@ Web 界面的 URL。"
           }
         }
       }
@@ -8189,8 +8189,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "This will permanently erase all episode files of this season."
+            "state": "translated",
+            "value": "这将永久删除本季的所有剧集文件。"
           }
         }
       }
@@ -8205,8 +8205,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "This will permanently erase the episode file."
+            "state": "translated",
+            "value": "这将永久删除该剧集文件。"
           }
         }
       }
@@ -8221,8 +8221,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "This will permanently erase the movie file."
+            "state": "translated",
+            "value": "这将永久删除该电影文件。"
           }
         }
       }
@@ -8238,8 +8238,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Time flies when you're having fun."
+            "state": "translated",
+            "value": "快乐时光总是短暂的。"
           }
         }
       }
@@ -8255,8 +8255,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Title"
+            "state": "translated",
+            "value": "标题"
           }
         }
       }
@@ -8271,8 +8271,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "To monitor a season or episode, the series itself must be monitored."
+            "state": "translated",
+            "value": "要监控某季或某集，必须先监控该剧集。"
           }
         }
       }
@@ -8287,8 +8287,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Today"
+            "state": "translated",
+            "value": "今天"
           }
         }
       }
@@ -8303,8 +8303,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Tomorrow"
+            "state": "translated",
+            "value": "明天"
           }
         }
       }
@@ -8319,7 +8319,7 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
+            "state": "translated",
             "value": "Torrent"
           }
         }
@@ -8335,8 +8335,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Trailer"
+            "state": "translated",
+            "value": "预告片"
           }
         }
       }
@@ -8351,8 +8351,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Translate the App"
+            "state": "translated",
+            "value": "翻译应用"
           }
         }
       }
@@ -8367,8 +8367,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Try again later."
+            "state": "translated",
+            "value": "请稍后再试。"
           }
         }
       }
@@ -8384,8 +8384,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Try holding your breath."
+            "state": "translated",
+            "value": "试试憋气。"
           }
         }
       }
@@ -8401,8 +8401,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Type"
+            "state": "translated",
+            "value": "类型"
           }
         }
       }
@@ -8418,8 +8418,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Unable to Import Automatically"
+            "state": "translated",
+            "value": "无法自动导入"
           }
         }
       }
@@ -8435,8 +8435,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Unaired"
+            "state": "translated",
+            "value": "未播出"
           }
         }
       }
@@ -8452,8 +8452,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Unannounced"
+            "state": "translated",
+            "value": "未公布"
           }
         }
       }
@@ -8469,8 +8469,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Uncoded"
+            "state": "translated",
+            "value": "未编码"
           }
         }
       }
@@ -8486,8 +8486,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Undetermined"
+            "state": "translated",
+            "value": "未确定"
           }
         }
       }
@@ -8503,8 +8503,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Unknown"
+            "state": "translated",
+            "value": "未知"
           }
         }
       }
@@ -8520,8 +8520,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Unknown Event"
+            "state": "translated",
+            "value": "未知事件"
           }
         }
       }
@@ -8536,8 +8536,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Unknown event."
+            "state": "translated",
+            "value": "未知事件。"
           }
         }
       }
@@ -8553,8 +8553,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Unmonitor Specials"
+            "state": "translated",
+            "value": "取消监控特辑"
           }
         }
       }
@@ -8570,8 +8570,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Unmonitored"
+            "state": "translated",
+            "value": "未监控"
           }
         }
       }
@@ -8587,8 +8587,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Unrated"
+            "state": "translated",
+            "value": "未评级"
           }
         }
       }
@@ -8604,8 +8604,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Unreleased"
+            "state": "translated",
+            "value": "未发布"
           }
         }
       }
@@ -8620,8 +8620,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Unsupported URL: %@"
+            "state": "translated",
+            "value": "不支持的 URL：%@"
           }
         }
       }
@@ -8637,8 +8637,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Unwanted"
+            "state": "translated",
+            "value": "不需要"
           }
         }
       }
@@ -8654,8 +8654,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Upcoming"
+            "state": "translated",
+            "value": "即将到来"
           }
         }
       }
@@ -8670,8 +8670,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Upgrade to Sonarr v4.0.5 or newer."
+            "state": "translated",
+            "value": "请升级到 Sonarr v4.0.5 或更高版本。"
           }
         }
       }
@@ -8686,7 +8686,7 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
+            "state": "translated",
             "value": "URL"
           }
         }
@@ -8702,8 +8702,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "URL identified itself as a %1$@ instance, not a %2$@ instance."
+            "state": "translated",
+            "value": "该 URL 识别为 %1$@ 实例，而非 %2$@ 实例。"
           }
         }
       }
@@ -8718,8 +8718,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "URL must start with \"http://\" or \"https://\"."
+            "state": "translated",
+            "value": "URL 必须以「http://」或「https://」开头。"
           }
         }
       }
@@ -8734,8 +8734,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "URL Not Reachable"
+            "state": "translated",
+            "value": "URL 不可达"
           }
         }
       }
@@ -8750,8 +8750,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "URLs must be non-local, \"localhost\" and \"127.0.0.1\" will not work."
+            "state": "translated",
+            "value": "URL 不能为本地地址，「localhost」和「127.0.0.1」无法使用。"
           }
         }
       }
@@ -8766,7 +8766,7 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
+            "state": "translated",
             "value": "Usenet"
           }
         }
@@ -8783,8 +8783,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "User Invoked Search"
+            "state": "translated",
+            "value": "用户触发搜索"
           }
         }
       }
@@ -8799,8 +8799,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Username"
+            "state": "translated",
+            "value": "用户名"
           }
         }
       }
@@ -8816,8 +8816,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Version %1$@ (%2$@)"
+            "state": "translated",
+            "value": "版本 %@（%@）"
           }
         }
       }
@@ -8832,8 +8832,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Video"
+            "state": "translated",
+            "value": "视频"
           }
         }
       }
@@ -8849,8 +8849,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Waiting"
+            "state": "translated",
+            "value": "等待中"
           }
         }
       }
@@ -8866,8 +8866,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Waiting to Import"
+            "state": "translated",
+            "value": "等待导入"
           }
         }
       }
@@ -8883,8 +8883,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Waiting to Process"
+            "state": "translated",
+            "value": "等待处理"
           }
         }
       }
@@ -8900,8 +8900,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Wanted"
+            "state": "translated",
+            "value": "想要"
           }
         }
       }
@@ -8917,8 +8917,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Warning"
+            "state": "translated",
+            "value": "警告"
           }
         }
       }
@@ -8934,8 +8934,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Watch"
+            "state": "translated",
+            "value": "观看"
           }
         }
       }
@@ -8950,8 +8950,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Watch Trailer"
+            "state": "translated",
+            "value": "观看预告片"
           }
         }
       }
@@ -8966,8 +8966,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Website"
+            "state": "translated",
+            "value": "网站"
           }
         }
       }
@@ -8983,8 +8983,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Weight"
+            "state": "translated",
+            "value": "权重"
           }
         }
       }
@@ -8999,8 +8999,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "What happened?"
+            "state": "translated",
+            "value": "发生了什么？"
           }
         }
       }
@@ -9015,8 +9015,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "What's New in %@"
+            "state": "translated",
+            "value": "%@ 的新功能"
           }
         }
       }
@@ -9031,8 +9031,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Whether to ignore the download, or remove it and its file(s) from the download client."
+            "state": "translated",
+            "value": "选择忽略该下载，或将其及文件从下载客户端中删除。"
           }
         }
       }
@@ -9047,8 +9047,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Wrong Instance Type"
+            "state": "translated",
+            "value": "错误的实例类型"
           }
         }
       }
@@ -9064,8 +9064,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Year"
+            "state": "translated",
+            "value": "年份"
           }
         }
       }
@@ -9080,8 +9080,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Yes"
+            "state": "translated",
+            "value": "是"
           }
         }
       }
@@ -9096,8 +9096,8 @@
         },
         "zh-Hans": {
           "stringUnit": {
-            "state": "needs_review",
-            "value": "Yesterday"
+            "state": "translated",
+            "value": "昨天"
           }
         }
       }
