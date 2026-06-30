@@ -36,7 +36,9 @@ extension CalendarView {
                 .disabled(isRetrying)
             }
 
-            ToolbarSpacer(placement: .primaryAction)
+            ToolbarItem(placement: .primaryAction) {
+                Spacer()
+            }
         }
     }
 

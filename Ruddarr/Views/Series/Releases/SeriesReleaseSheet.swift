@@ -59,7 +59,7 @@ struct SeriesReleaseSheet: View {
                 "Grab Release",
                 isPresented: $showGrabConfirmation
             ) {
-                Button("Grab Release", role: .confirm) { Task { await downloadRelease(force: true) } }
+                Button("Grab Release") { Task { await downloadRelease(force: true) } }
                 Button("Cancel", role: .cancel) { }
             } message: {
                 Text("The release for this series/episode could not be determined and it may not import automatically. Do you want to grab \"\(release.title)\"?")

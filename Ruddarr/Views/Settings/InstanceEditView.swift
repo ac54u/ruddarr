@@ -84,7 +84,7 @@ struct InstanceEditView: View {
         .alert("Basic Authentication", isPresented: $showBasicAuthentication, actions: {
             TextField("Username", text: $username)
             SecureField("Password", text: $password)
-            Button("Add Header", role: .confirm) {
+            Button("Add Header") {
                 let auth = Data("\(username):\(password)".utf8).base64EncodedString()
                 instance.headers.append(InstanceHeader(name: "Authorization", value: "Basic \(auth)"))
             }

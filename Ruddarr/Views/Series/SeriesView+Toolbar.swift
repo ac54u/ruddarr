@@ -86,7 +86,9 @@ extension SeriesView {
     @ToolbarContentBuilder
     var bottomBarInstancePicker: some ToolbarContent {
         #if os(iOS)
-            ToolbarSpacer(.flexible, placement: .bottomBar)
+            ToolbarItem(placement: .bottomBar) {
+                Spacer()
+            }
 
             ToolbarItem(placement: .bottomBar) {
                 Menu {
@@ -106,13 +108,17 @@ extension SeriesView {
                 .tint(.primary)
             }
         #else
-            ToolbarSpacer(.flexible, placement: .principal)
+            ToolbarItem(placement: .principal) {
+                Spacer()
+            }
         #endif
     }
 
     @ToolbarContentBuilder
     var toolbarInstancePicker: some ToolbarContent {
-        ToolbarSpacer(.fixed, placement: .navigation)
+        ToolbarItem(placement: .navigation) {
+            Spacer()
+        }
 
         ToolbarItem(placement: .navigation) {
             Menu {

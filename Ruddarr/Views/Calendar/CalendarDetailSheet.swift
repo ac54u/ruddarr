@@ -59,7 +59,9 @@ struct CalendarSheetAwareToolbar: ToolbarContent {
                         .tint(.primary)
                     }
 
-                    ToolbarSpacer(.flexible, placement: deviceType == .phone ? .bottomBar : .automatic)
+                    ToolbarItem(placement: deviceType == .phone ? .bottomBar : .automatic) {
+                        Spacer()
+                    }
                 }
             #endif
         }
