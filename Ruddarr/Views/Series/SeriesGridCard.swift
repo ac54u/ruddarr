@@ -65,6 +65,11 @@ struct SeriesGridCard: View {
             poster.frame(width: 300, height: 450)
         }
         .tracksQueueStatus(series.queueKey, into: $queueStatus)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(series.title)
+        .accessibilityValue("\(series.seasonCount) Seasons")
+        .accessibilityAddTraits(series.monitored ? [.isSelected] : [])
+        .accessibilityHint(String(localized: "Double-tap to view details"))
     }
 
     var poster: some View {
@@ -76,7 +81,7 @@ struct SeriesGridCard: View {
     }
 
     var posterWidth: CGFloat {
-        deviceType == .phone ? 80 : 95
+        deviceType == .phone ? 80 : 90
     }
 
     var icons: some View {

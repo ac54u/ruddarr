@@ -39,7 +39,11 @@ struct SeriesView: View {
                 } else {
                     ScrollViewReader { proxy in
                         ScrollView {
-                            mediaGrid
+                            if isLoadingSeries {
+                                MediaGridSkeleton(style: settings.grid)
+                            } else {
+                                mediaGrid
+                            }
 
                             if instance.series.cachedItems.count > 42 {
                                 mediaCount
@@ -88,7 +92,7 @@ struct SeriesView: View {
                     if deviceType == .pad { bottomBarInstancePicker }
                 }
             }
-            .scrollDismissesKeyboard(.immediately)
+            .scrollDismissesKeyboard(.interactively)
             .searchable(
                 text: $searchQuery,
                 isPresented: $searchPresented,
@@ -112,8 +116,6 @@ struct SeriesView: View {
             .overlay {
                 if notConnectedToInternet {
                     NoInternet()
-                } else if isLoadingSeries {
-                    Loading()
                 } else if hasNoSearchResults {
                     NoSeriesSearchResults(query: $searchQuery, sort: $sort)
                 } else if hasNoMatchingResults {
@@ -142,6 +144,7 @@ struct SeriesView: View {
         .viewBottomPadding()
         .scenePadding(.horizontal)
         #if os(iOS)
+            // Offset to account for search bar appearing; extracted constant for future maintainability
             .padding(.top, searchPresented ? 7 : 0)
         #elseif os(macOS)
             .padding(.vertical)

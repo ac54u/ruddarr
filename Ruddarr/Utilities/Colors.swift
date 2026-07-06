@@ -1,5 +1,11 @@
 import SwiftUI
 
+/// Custom color extensions providing cross-platform semantic system colors.
+/// Note: Some mappings differ between iOS and macOS due to platform-specific color semantics.
+/// - `darkText` maps to `UIColor.darkText` on iOS and `NSColor.textColor` on macOS (primary text)
+/// - `systemBackground` maps to window/control backgrounds respectively per platform
+/// Verify the intended visual appearance when using these on both platforms.
+
 struct SheetBackgroundStyle: ShapeStyle {
     func resolve(in env: EnvironmentValues) -> some ShapeStyle {
         if env.colorScheme == .dark {
@@ -45,7 +51,7 @@ extension ShapeStyle where Self == Color {
     static var label: Color { Color(NSColor.labelColor) }
 
     static var darkGray: Color { Color(NSColor.darkGray) }
-    static var darkText: Color { Color(NSColor.secondaryLabelColor) }
+    static var darkText: Color { Color(NSColor.textColor) }
 
     static var lightGray: Color { Color(NSColor.lightGray) }
     static var lightText: Color { Color(NSColor.secondaryLabelColor) }
@@ -70,4 +76,35 @@ extension ShapeStyle where Self == Color {
         })
     }
 #endif
+}
+
+// MARK: - Semantic Color Tokens
+
+/// Purpose-based color aliases for maintainable theming.
+/// Prefer these over source-based names (e.g. use `.surfaceCard` instead of `.quaternarySystemFill`).
+extension ShapeStyle where Self == Color {
+    // MARK: Surface
+    static var surfacePrimary: Color { .systemBackground }
+    static var surfaceSecondary: Color { .secondarySystemBackground }
+    static var surfaceTertiary: Color { .tertiarySystemBackground }
+    static var surfaceCard: Color { .card }
+    static var surfaceGrouped: Color { .systemGroupedBackground }
+
+    // MARK: Text
+    static var textPrimary: Color { .label }
+    static var textSecondary: Color { .secondary }
+    static var textTertiary: Color { .tertiaryLabel }
+    static var textDisabled: Color { .quaternaryLabel }
+
+    // MARK: Fill
+    static var fillPrimary: Color { .systemFill }
+    static var fillSecondary: Color { .secondarySystemFill }
+    static var fillTertiary: Color { .tertiarySystemFill }
+    static var fillQuaternary: Color { .quaternarySystemFill }
+
+    // MARK: Feedback
+    static var feedbackError: Color { .red }
+    static var feedbackWarning: Color { .orange }
+    static var feedbackSuccess: Color { .green }
+    static var feedbackInfo: Color { .blue }
 }

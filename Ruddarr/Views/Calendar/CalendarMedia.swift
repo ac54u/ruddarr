@@ -41,6 +41,10 @@ struct CalendarMovie: View {
             .onTapGesture {
                 open(.movie(movie))
             }
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel(movie.title)
+            .accessibilityAddTraits(.isButton)
+            .accessibilityHint(String(localized: "Double-tap to view movie details"))
     }
 
     var shouldFade: Bool {
@@ -115,6 +119,11 @@ struct CalendarEpisode: View {
         .onTapGesture {
             open(.episode(episode))
         }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(episode.episodeLabel)
+        .accessibilityValue(episode.series?.title ?? "")
+        .accessibilityAddTraits(.isButton)
+        .accessibilityHint(String(localized: "Double-tap to view episode details"))
     }
 
     var shouldFade: Bool {

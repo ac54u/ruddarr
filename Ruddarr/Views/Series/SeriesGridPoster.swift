@@ -29,6 +29,10 @@ struct SeriesGridPoster: View {
                 }
             }
             .clipShape(RoundedRectangle(cornerRadius: 14))
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel(series.title)
+            .accessibilityAddTraits(series.monitored ? [.isSelected] : [])
+            .accessibilityHint(String(localized: "Double-tap to view details"))
     }
 
     var poster: some View {

@@ -11,6 +11,7 @@ extension MoviesView {
                 }
                 .tint(.primary)
                 .keyboardShortcut("n", modifiers: .command)
+                .accessibilityLabel(String(localized: "Add movie"))
             }
         }
     }
@@ -60,6 +61,7 @@ extension MoviesView {
                 Image(systemName: "line.3.horizontal.decrease")
             }
         }
+        .accessibilityLabel(String(localized: "Filter movies"))
     }
 
     var toolbarSortingButton: some View {
@@ -81,6 +83,7 @@ extension MoviesView {
             Image(systemName: "arrow.up.arrow.down")
                 .imageScale(.medium)
         }
+        .accessibilityLabel(String(localized: "Sort movies"))
     }
 
     @ToolbarContentBuilder
@@ -132,6 +135,7 @@ extension MoviesView {
                 Image(systemName: "internaldrive")
             }
             .tint(.primary)
+            .accessibilityLabel(String(localized: "Switch instance"))
         }
     }
 

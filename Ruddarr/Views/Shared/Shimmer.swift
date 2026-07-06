@@ -22,6 +22,23 @@ extension View {
 
 extension Color {
     func mixed(with other: Color, amount: Double) -> Color {
+        #if os(macOS)
+        let nsSelf = NSColor(self)
+        let nsOther = NSColor(other)
+
+        var r1: CGFloat = 0, g1: CGFloat = 0, b1: CGFloat = 0, a1: CGFloat = 0
+        var r2: CGFloat = 0, g2: CGFloat = 0, b2: CGFloat = 0, a2: CGFloat = 0
+
+        nsSelf.getRed(&r1, green: &g1, blue: &b1, alpha: &a1)
+        nsOther.getRed(&r2, green: &g2, blue: &b2, alpha: &a2)
+
+        return Color(nsColor: NSColor(
+            srgbRed: r1 + (r2 - r1) * amount,
+            green: g1 + (g2 - g1) * amount,
+            blue: b1 + (b2 - b1) * amount,
+            alpha: a1 + (a2 - a1) * amount
+        ))
+        #else
         let uiSelf = UIColor(self)
         let uiOther = UIColor(other)
 
@@ -37,6 +54,7 @@ extension Color {
             blue: b1 + (b2 - b1) * amount,
             alpha: a1 + (a2 - a1) * amount
         ))
+        #endif
     }
 }
 
@@ -48,9 +66,11 @@ private struct ShimmerModifier: ViewModifier {
     let pause: Double
     let width: Double
 
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
     @ViewBuilder
     func body(content: Content) -> some View {
-        if active {
+        if active && !reduceMotion {
             TimelineView(.animation) { context in
                 let total = duration + pause
                 let elapsed = context.date.timeIntervalSinceReferenceDate

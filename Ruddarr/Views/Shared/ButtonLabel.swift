@@ -18,7 +18,7 @@ struct ButtonLabel: View {
     private var prominent: Bool = false
 
     @ScaledMetric(relativeTo: .title3) private var regularIconHeight: CGFloat = 18
-    @ScaledMetric(relativeTo: .footnote) private var smallIconHeight: CGFloat = 13
+    @ScaledMetric(relativeTo: .caption) private var smallIconHeight: CGFloat = 12
 
     init(text: String, icon: String? = nil, size: Size = .regular, prominent: Bool = false, isLoading: Bool = false) {
         self.label = Text(text)

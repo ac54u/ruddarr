@@ -11,6 +11,7 @@ extension SeriesView {
                 }
                 .tint(.primary)
                 .keyboardShortcut("n", modifiers: .command)
+                .accessibilityLabel(String(localized: "Add series"))
             }
         }
     }
@@ -60,6 +61,7 @@ extension SeriesView {
                 Image(systemName: "line.3.horizontal.decrease")
             }
         }
+        .accessibilityLabel(String(localized: "Filter series"))
     }
 
     var toolbarSortingButton: some View {
@@ -81,6 +83,7 @@ extension SeriesView {
             Image(systemName: "arrow.up.arrow.down")
                 .imageScale(.medium)
         }
+        .accessibilityLabel(String(localized: "Sort series"))
     }
 
     @ToolbarContentBuilder
@@ -132,6 +135,7 @@ extension SeriesView {
                 Image(systemName: "internaldrive")
             }
             .tint(.primary)
+            .accessibilityLabel(String(localized: "Switch instance"))
         }
     }
 

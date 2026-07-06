@@ -18,6 +18,10 @@ struct MovieGridPoster: View {
                 }
             }
             .clipShape(RoundedRectangle(cornerRadius: 14))
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel("\(movie.title), \(movie.yearLabel)")
+            .accessibilityAddTraits(movie.monitored ? [.isSelected] : [])
+            .accessibilityHint(String(localized: "Double-tap to view details"))
     }
 
     var poster: some View {

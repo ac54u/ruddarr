@@ -65,6 +65,11 @@ struct MovieGridCard: View {
             poster.frame(width: 300, height: 450)
         }
         .tracksQueueStatus(movie.queueKey, into: $queueStatus)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(movie.title)
+        .accessibilityValue("\(movie.yearLabel), \(qualityProfile)")
+        .accessibilityAddTraits(movie.monitored ? [.isSelected] : [])
+        .accessibilityHint(String(localized: "Double-tap to view details"))
     }
 
     var poster: some View {

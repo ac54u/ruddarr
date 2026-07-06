@@ -29,6 +29,9 @@ struct CalendarDate: View {
             Spacer()
         }
         .foregroundStyle(isToday ? settings.theme.tint : .primary)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(fullDateString)
+        .accessibilityAddTraits(isToday ? [.isSelected, .isHeader] : [])
         .onAppear {
             isToday = Calendar.current.isDateInToday(date)
         }
@@ -38,6 +41,12 @@ struct CalendarDate: View {
         .transaction { transaction in
             transaction.animation = nil // disable animation
         }
+    }
+
+    var fullDateString: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE, MMMM d"
+        return formatter.string(from: date)
     }
 
     static let dayOfWeek: DateFormatter = {

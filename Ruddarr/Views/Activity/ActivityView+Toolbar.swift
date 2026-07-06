@@ -83,6 +83,7 @@ extension ActivityView {
                 Image(systemName: "line.3.horizontal.decrease")
             }
         }
+        .accessibilityLabel(String(localized: "Filter tasks"))
     }
 
     var instancePicker: some View {
@@ -161,5 +162,6 @@ extension ActivityView {
             Image(systemName: "arrow.up.arrow.down")
                 .imageScale(.medium)
         }
+        .accessibilityLabel(String(localized: "Sort tasks"))
     }
 }

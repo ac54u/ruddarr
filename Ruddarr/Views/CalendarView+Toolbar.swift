@@ -83,6 +83,7 @@ extension CalendarView {
                 }
             }
             .menuIndicator(.hidden)
+            .accessibilityLabel(String(localized: "Filter calendar"))
         }
     }
 

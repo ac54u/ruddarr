@@ -24,18 +24,36 @@ struct SearchingIndicator: View {
 
     private let textTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
+    @State private var isMuted: Bool = false
+
     var body: some View {
-        ProgressView {
-            VStack {
-                Text("Searching...")
-                Text(message)
-                    .font(.footnote)
-                    .opacity(opacity)
-                    .animation(.smooth, value: message)
-                    .animation(.smooth, value: opacity)
+        VStack(spacing: 12) {
+            ProgressView {
+                VStack {
+                    Text("Searching...")
+                    Text(message)
+                        .font(.footnote)
+                        .opacity(opacity)
+                        .animation(.smooth, value: message)
+                        .animation(.smooth, value: opacity)
+                }
+            }
+            .tint(.secondary)
+
+            if !isMuted {
+                Button {
+                    stopAudio()
+                    isMuted = true
+                } label: {
+                    Label(String(localized: "Mute"), systemImage: "speaker.slash")
+                        .font(.caption)
+                }
+                .buttonStyle(.plain)
+                .foregroundStyle(.secondary)
+                .accessibilityLabel(String(localized: "Mute elevator music"))
+                .accessibilityHint(String(localized: "Stops the background audio"))
             }
         }
-        .tint(.secondary)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .contentShape(Rectangle())
         .onReceive(textTimer, perform: tick)

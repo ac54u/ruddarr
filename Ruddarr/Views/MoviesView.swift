@@ -38,7 +38,11 @@ struct MoviesView: View {
                 } else {
                     ScrollViewReader { proxy in
                         ScrollView {
-                            mediaGrid
+                            if isLoadingMovies {
+                                MediaGridSkeleton(style: settings.grid)
+                            } else {
+                                mediaGrid
+                            }
 
                             if instance.movies.cachedItems.count > 42 {
                                 mediaCount
@@ -87,7 +91,7 @@ struct MoviesView: View {
                     if deviceType == .pad { bottomBarInstancePicker }
                 }
             }
-            .scrollDismissesKeyboard(.immediately)
+            .scrollDismissesKeyboard(.interactively)
             .searchable(
                 text: $searchQuery,
                 isPresented: $searchPresented,
@@ -111,8 +115,6 @@ struct MoviesView: View {
             .overlay {
                 if notConnectedToInternet {
                     NoInternet()
-                } else if isLoadingMovies {
-                    Loading()
                 } else if hasNoSearchResults {
                     NoMovieSearchResults(query: $searchQuery, sort: $sort)
                 } else if hasNoMatchingResults {
@@ -141,6 +143,7 @@ struct MoviesView: View {
         .viewBottomPadding()
         .scenePadding(.horizontal)
         #if os(iOS)
+            // Offset to account for search bar appearing; extracted constant for future maintainability
             .padding(.top, searchPresented ? 7 : 0)
         #elseif os(macOS)
             .padding(.vertical)

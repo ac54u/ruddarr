@@ -27,7 +27,7 @@ struct QueueListItem: View {
                         Bullet()
                         Text(remaining)
                             .monospacedDigit()
-                            .id(time)
+                            .contentTransition(.numericText())
                     }
                 }
 
@@ -44,6 +44,10 @@ struct QueueListItem: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .contentShape(Rectangle())
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(item.titleLabel)
+        .accessibilityValue("\(item.statusLabel), \(item.trackedDownloadState == .downloading ? item.progressLabel : "")")
+        .accessibilityAddTraits(item.hasIssue ? [.isButton, .isSelected] : [.isButton])
         .onReceive(timer) { _ in
             if item.trackedDownloadState == .downloading {
                 withAnimation {

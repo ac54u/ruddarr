@@ -6,6 +6,7 @@ struct ActivityView: View {
     @State var sort: QueueSort = .init()
     @State var items: [QueueItem] = []
     @State private var selectedItem: QueueItem?
+    @State private var alertPresented = false
 
     @EnvironmentObject var settings: AppSettings
     @Environment(\.deviceType) private var deviceType
@@ -78,6 +79,19 @@ struct ActivityView: View {
                     .presentationBackground(.sheetBackground)
                     .environmentObject(settings)
             }
+            .alert(isPresented: $alertPresented, error: queue.error) { _ in
+                Button("OK") { queue.error = nil }
+            } message: { error in
+                Text(error.recoverySuggestionFallback)
+            }
+            .onChange(of: queue.error) {
+                if queue.error != nil { alertPresented = true }
+            }
+            .overlay {
+                if notConnectedToInternet {
+                    NoInternet()
+                }
+            }
         }
     }
 
@@ -87,6 +101,12 @@ struct ActivityView: View {
             systemImage: "slash.circle",
             description: Text("All instance queues are empty.")
         )
+    }
+
+    var notConnectedToInternet: Bool {
+        if !queue.items.isEmpty { return false }
+        if case .notConnectedToInternet = queue.error { return true }
+        return false
     }
 
     var sectionHeader: some View {

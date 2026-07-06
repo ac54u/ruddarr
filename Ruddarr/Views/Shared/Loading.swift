@@ -12,6 +12,7 @@ struct QueueStatusIcon: View {
     var color: Color = .secondary
 
     @EnvironmentObject var settings: AppSettings
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var animate = false
 
     var body: some View {
@@ -20,7 +21,7 @@ struct QueueStatusIcon: View {
             .foregroundStyle(settings.theme.tint, color)
             .accessibilityLabel(status.label)
 
-        if status.pulses {
+        if status.pulses && !reduceMotion {
             icon
                 .symbolEffect(.pulse.byLayer, value: animate)
                 .task {

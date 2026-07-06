@@ -27,11 +27,13 @@ struct CachedAsyncImage: View {
                 transaction: .init(animation: .smooth)
             ) { state in
                 if let image = state.image {
+                    // `unsafe` required here because Nuke's ImageResponse is not Sendable,
+                    // but this transition expression does not escape the main actor.
                     image.resizable().transition(
                         unsafe ((try? state.result?.get())?.cacheType != nil ? .identity : .opacity)
                     )
-                // } else if state.error != nil {
-                    // PlaceholderImage(text: placeholder, status: "network.slash")
+                } else if state.error != nil {
+                    PlaceholderImage(text: placeholder, status: "photo.badge.exclamationmark")
                 } else {
                     PlaceholderImage(text: placeholder)
                 }
